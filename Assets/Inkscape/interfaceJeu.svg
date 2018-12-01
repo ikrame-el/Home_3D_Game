@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="interfaceJeu.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.058657722"
+     inkscape:cx="3097.4758"
+     inkscape:cy="2237.5886"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#eef4d7;stroke:none;stroke-width:23.58208466;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect817-0-7"
+       width="1920"
+       height="1080"
+       x="-1132.5741"
+       y="-1203.0914"
+       inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Backround_interface.png"
+       inkscape:export-xdpi="25.400002"
+       inkscape:export-ydpi="25.400002" />
+    <g
+       id="g3829"
+       transform="translate(1913.0386,878.08434)">
+      <rect
+         y="-284.31549"
+         x="-787.62744"
+         height="220.69354"
+         width="229.24834"
+         id="rect817"
+         style="opacity:1;fill:#ffffff;stroke:#000000;stroke-width:3.68355775;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-275.75809"
+         x="-779.06995"
+         height="45.357143"
+         width="46.113098"
+         id="rect815"
+         style="opacity:1;fill:#ff0000;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-275.75809"
+         x="-723.5069"
+         height="45.357143"
+         width="46.113098"
+         id="rect815-6"
+         style="opacity:1;fill:#0000ff;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-275.75809"
+         x="-667.94519"
+         height="45.357143"
+         width="46.113098"
+         id="rect815-1"
+         style="opacity:1;fill:#ff00ff;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-275.75809"
+         x="-612.38342"
+         height="45.357143"
+         width="46.113098"
+         id="rect815-6-9"
+         style="opacity:1;fill:#ffff00;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-222.84148"
+         x="-779.06995"
+         height="45.357143"
+         width="46.113098"
+         id="rect815-3"
+         style="opacity:1;fill:#37c837;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-222.84148"
+         x="-723.50696"
+         height="45.357143"
+         width="46.113098"
+         id="rect815-6-3"
+         style="opacity:1;fill:#00ffcc;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-222.84148"
+         x="-667.94519"
+         height="45.357143"
+         width="46.113098"
+         id="rect815-1-0"
+         style="opacity:1;fill:#80b3ff;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-222.84148"
+         x="-612.38342"
+         height="45.357143"
+         width="46.113098"
+         id="rect815-6-9-3"
+         style="opacity:1;fill:#ff0066;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-169.39565"
+         x="-779.06995"
+         height="45.357143"
+         width="46.113098"
+         id="rect815-38"
+         style="opacity:1;fill:#6c535d;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-169.39565"
+         x="-723.50696"
+         height="45.357143"
+         width="46.113098"
+         id="rect815-6-0"
+         style="opacity:1;fill:#672178;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-169.39565"
+         x="-667.94519"
+         height="45.357143"
+         width="46.113098"
+         id="rect815-1-1"
+         style="opacity:1;fill:#008000;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-169.39565"
+         x="-612.38342"
+         height="45.357143"
+         width="46.113098"
+         id="rect815-6-9-1"
+         style="opacity:1;fill:#d38d5f;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-116.47936"
+         x="-779.06995"
+         height="45.357143"
+         width="46.113098"
+         id="rect815-3-7"
+         style="opacity:1;fill:#ff6600;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-116.47936"
+         x="-723.50696"
+         height="45.357143"
+         width="46.113098"
+         id="rect815-6-3-2"
+         style="opacity:1;fill:#d4aa00;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-116.47936"
+         x="-667.94519"
+         height="45.357143"
+         width="46.113098"
+         id="rect815-1-0-5"
+         style="opacity:1;fill:#80b3ff;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-116.47936"
+         x="-612.38342"
+         height="45.357143"
+         width="46.113098"
+         id="rect815-6-9-3-6"
+         style="opacity:1;fill:#ff0066;stroke:#000000;stroke-width:3.86500001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g7818"
+       transform="translate(670.46115,-578.73535)">
+      <g
+         id="g7838"
+         transform="translate(-3.1762941,217.57615)">
+        <rect
+           style="opacity:1;fill:#cdde87;fill-opacity:1;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect817-0-0"
+           width="261.01285"
+           height="291.62842"
+           x="-175.84691"
+           y="-754.96021"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Menu_actions.png"
+           inkscape:export-xdpi="25.398771"
+           inkscape:export-ydpi="25.398771" />
+        <g
+           id="g1861"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_color.png"
+           inkscape:export-xdpi="25.341293"
+           inkscape:export-ydpi="25.341293">
+          <rect
+             y="-600.22772"
+             x="-139.43698"
+             height="41.577381"
+             width="181.42857"
+             id="rect914-26"
+             style="opacity:1;fill:#22280b;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             id="text918-1"
+             y="-570.49829"
+             x="-137.10732"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.14121628px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.10353041"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.45555496px;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-570.49829"
+               x="-137.10732"
+               id="tspan916-4"
+               sodipodi:role="line">Color</tspan></text>
+        </g>
+        <g
+           id="g1846"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\menuActions\Button_Actions.png"
+           inkscape:export-xdpi="25.291935"
+           inkscape:export-ydpi="25.291935">
+          <rect
+             y="-807.02863"
+             x="-156.4767"
+             height="51.234989"
+             width="224.20853"
+             id="rect914-7-4"
+             style="opacity:1;fill:#22280b;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             transform="scale(1.001425,0.99857703)"
+             id="text918-7-5"
+             y="-771.00311"
+             x="-114.46034"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:61.49291992px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#eef4d7;fill-opacity:1;stroke:none;stroke-width:1.53732288"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.80555725px;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#eef4d7;stroke:none;stroke-width:1.53732288"
+               y="-771.00311"
+               x="-114.46034"
+               id="tspan916-1-6"
+               sodipodi:role="line">Actions</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#eef4d7;stroke:none;stroke-width:1.53732288"
+               y="-694.13696"
+               x="-114.46034"
+               sodipodi:role="line"
+               id="tspan8037" /><tspan
+               id="tspan974-2"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#eef4d7;stroke:none;stroke-width:1.53732288"
+               y="-617.27081"
+               x="-114.46034"
+               sodipodi:role="line" /></text>
+        </g>
+        <g
+           id="g1851"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_delete.png"
+           inkscape:export-xdpi="25.341293"
+           inkscape:export-ydpi="25.341293">
+          <rect
+             y="-729.41467"
+             x="-138.43921"
+             height="41.577381"
+             width="181.42857"
+             id="rect914-8-6"
+             style="opacity:1;fill:#22280b;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             id="text918-4-8"
+             y="-699.68488"
+             x="-138.47018"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.14121628px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.10353041"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.45555496px;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-699.68488"
+               x="-138.47018"
+               id="tspan916-8-5"
+               sodipodi:role="line">Delete</tspan></text>
+        </g>
+        <g
+           id="g1856"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_rotate.png"
+           inkscape:export-xdpi="25.341293"
+           inkscape:export-ydpi="25.341293">
+          <rect
+             y="-664.85571"
+             x="-138.43921"
+             height="41.577381"
+             width="181.42857"
+             id="rect914-8-1-4-0"
+             style="opacity:1;fill:#22280b;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             id="text918-4-8-9-6"
+             y="-635.12775"
+             x="-138.47018"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.14121628px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.10353041"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.45555496px;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-635.12775"
+               x="-138.47018"
+               id="tspan916-8-4-9-3"
+               sodipodi:role="line">Rotate</tspan></text>
+        </g>
+        <g
+           id="g1867"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_texture.png"
+           inkscape:export-xdpi="25.341293"
+           inkscape:export-ydpi="25.341293">
+          <rect
+             y="-535.14032"
+             x="-139.43698"
+             height="41.577381"
+             width="181.42857"
+             id="rect914-2-5"
+             style="opacity:1;fill:#22280b;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             id="text918-2-0"
+             y="-505.41074"
+             x="-135.18977"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.14121628px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.10353041"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.45555496px;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-505.41074"
+               x="-135.18977"
+               id="tspan916-2-6"
+               sodipodi:role="line">Texture</tspan><tspan
+               id="tspan1147-0"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-450.23422"
+               x="-135.18977"
+               sodipodi:role="line" /></text>
+        </g>
+        <rect
+           style="opacity:1;fill:#cdde87;fill-opacity:1;stroke:#22280b;stroke-width:5.00150013;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect817-0"
+           width="259.65549"
+           height="543.50519"
+           x="-1764.4227"
+           y="-754.43787"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Menu_furniture.png"
+           inkscape:export-xdpi="25.336943"
+           inkscape:export-ydpi="25.336943" />
+        <g
+           id="g1803"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_bathroom.png"
+           inkscape:export-xdpi="25.376795"
+           inkscape:export-ydpi="25.376795">
+          <rect
+             y="-600.38385"
+             x="-1726.0454"
+             height="41.577381"
+             width="181.42857"
+             id="rect914"
+             style="opacity:1;fill:#22280b;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             id="text918"
+             y="-568.76855"
+             x="-1725.7751"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:34.17998123px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.10353041"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.45555496px;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-568.76855"
+               x="-1725.7751"
+               id="tspan916"
+               sodipodi:role="line">Bathroom</tspan></text>
+        </g>
+        <g
+           id="g1788"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_furniture.png"
+           inkscape:export-xdpi="25.376795"
+           inkscape:export-ydpi="25.376795">
+          <rect
+             y="-807.1853"
+             x="-1745.7311"
+             height="51.234989"
+             width="224.20851"
+             id="rect914-7"
+             style="opacity:1;fill:#22280b;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             transform="scale(1.001425,0.99857702)"
+             id="text918-7"
+             y="-769.18591"
+             x="-1725.8568"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.27777863px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.53732276"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.80555725px;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.53732276"
+               y="-769.18591"
+               x="-1725.8568"
+               id="tspan916-1"
+               sodipodi:role="line">Furniture</tspan><tspan
+               id="tspan974"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.27777863px;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.53732276"
+               y="-725.08868"
+               x="-1725.8568"
+               sodipodi:role="line" /></text>
+        </g>
+        <g
+           id="g1793"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_bedroom.png"
+           inkscape:export-xdpi="25.376795"
+           inkscape:export-ydpi="25.376795">
+          <rect
+             y="-729.57098"
+             x="-1725.0476"
+             height="41.577381"
+             width="181.42857"
+             id="rect914-8"
+             style="opacity:1;fill:#22280b;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             id="text918-4"
+             y="-695.39062"
+             x="-1725.7751"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.90801239px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.10353041"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.45555496px;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-695.39062"
+               x="-1725.7751"
+               id="tspan916-8"
+               sodipodi:role="line">Bedroom</tspan></text>
+        </g>
+        <g
+           id="g1798"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_livingroom.png"
+           inkscape:export-xdpi="25.376795"
+           inkscape:export-ydpi="25.376795">
+          <rect
+             y="-665.01172"
+             x="-1725.0476"
+             height="41.577381"
+             width="181.42857"
+             id="rect914-8-1-4"
+             style="opacity:1;fill:#22280b;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             id="text918-4-8-9"
+             y="-634.64301"
+             x="-1725.3628"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.67261887px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.10353041"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.45555496px;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-634.64301"
+               x="-1725.3628"
+               id="tspan916-8-4-9"
+               sodipodi:role="line">Livingroom</tspan></text>
+        </g>
+        <g
+           id="g1809"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_kitchen.png"
+           inkscape:export-xdpi="25.376795"
+           inkscape:export-ydpi="25.376795">
+          <rect
+             y="-535.29724"
+             x="-1726.0454"
+             height="41.577381"
+             width="181.42857"
+             id="rect914-2"
+             style="opacity:1;fill:#22280b;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             id="text918-2"
+             y="-501.15698"
+             x="-1725.7751"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.75865555px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.10353041"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.45555496px;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-501.15698"
+               x="-1725.7751"
+               id="tspan916-2"
+               sodipodi:role="line">Kitchen</tspan><tspan
+               id="tspan1147"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-450.20865"
+               x="-1725.7751"
+               sodipodi:role="line" /></text>
+        </g>
+        <g
+           id="g1815"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_garden.png"
+           inkscape:export-xdpi="25.376795"
+           inkscape:export-ydpi="25.376795">
+          <rect
+             y="-470.20972"
+             x="-1726.0454"
+             height="41.577381"
+             width="181.42857"
+             id="rect914-2-0"
+             style="opacity:1;fill:#22280b;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             id="text918-2-9"
+             y="-437.79871"
+             x="-1724.4124"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:39.63113403px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.10353041"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.45555496px;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-437.79871"
+               x="-1724.4124"
+               id="tspan916-2-3"
+               sodipodi:role="line">Garden</tspan><tspan
+               id="tspan1147-3"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-388.2598"
+               x="-1724.4124"
+               sodipodi:role="line" /></text>
+        </g>
+        <g
+           id="g1821"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_Electronic.png"
+           inkscape:export-xdpi="25.376795"
+           inkscape:export-ydpi="25.376795">
+          <rect
+             y="-405.53818"
+             x="-1726.0454"
+             height="41.577381"
+             width="181.42857"
+             id="rect914-76"
+             style="opacity:1;fill:#22280b;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             id="text918-12"
+             y="-374.77682"
+             x="-1725.8417"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.86601257px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.10353041"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.13288879px;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-374.77682"
+               x="-1725.8417"
+               id="tspan916-5"
+               sodipodi:role="line">Electronic</tspan><tspan
+               id="tspan8191"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-333.69431"
+               x="-1725.8417"
+               sodipodi:role="line" /></text>
+        </g>
+        <g
+           id="g1827"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_door.png"
+           inkscape:export-xdpi="25.376795"
+           inkscape:export-ydpi="25.376795">
+          <rect
+             y="-340.45154"
+             x="-1726.0454"
+             height="41.577381"
+             width="181.42857"
+             id="rect914-2-02"
+             style="opacity:1;fill:#22280b;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             id="text918-2-93"
+             y="-310.72235"
+             x="-1725.7751"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.14121628px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.10353041"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.45555496px;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-310.72235"
+               x="-1725.7751"
+               id="tspan916-2-0"
+               sodipodi:role="line">Door</tspan><tspan
+               id="tspan1147-2"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-255.54584"
+               x="-1725.7751"
+               sodipodi:role="line" /></text>
+        </g>
+        <g
+           id="g1833"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_window.png"
+           inkscape:export-xdpi="25.341299"
+           inkscape:export-ydpi="25.341299">
+          <rect
+             y="-275.36414"
+             x="-1726.0454"
+             height="41.577381"
+             width="181.42857"
+             id="rect914-2-0-7"
+             style="opacity:1;fill:#22280b;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             id="text918-2-9-8"
+             y="-245.63483"
+             x="-1723.6675"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.14121628px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.10353041"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.45555496px;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-245.63483"
+               x="-1723.6675"
+               id="tspan916-2-3-4"
+               sodipodi:role="line">Window</tspan><tspan
+               id="tspan1147-3-4"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.10353041"
+               y="-190.45831"
+               x="-1723.6675"
+               sodipodi:role="line" /></text>
+        </g>
+        <g
+           transform="rotate(90,-974.33944,42.423626)"
+           id="g8142">
+          <rect
+             style="opacity:1;fill:#ffcc00;fill-opacity:1;stroke:none;stroke-width:3.52546668;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect8106-6"
+             width="1986.6924"
+             height="32.599754"
+             x="-934.6355"
+             y="-1858.6953"
+             transform="rotate(-90)" />
+          <rect
+             style="opacity:1;fill:#ffcc00;fill-opacity:1;stroke:none;stroke-width:3.52546668;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect8106-6-3"
+             width="1986.6924"
+             height="32.599754"
+             x="-1858.6953"
+             y="-1052.0569" />
+        </g>
+        <g
+           id="g7899"
+           transform="translate(-1071.4242,-251.27434)"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\g7899.png"
+           inkscape:export-xdpi="25.376795"
+           inkscape:export-ydpi="25.376795">
+          <g
+             id="g1839">
+            <rect
+               style="opacity:1;fill:#22280b;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               id="rect914-7-6"
+               width="224.20853"
+               height="51.234989"
+               x="116.32584"
+               y="-556.1864" />
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:61.49291992px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.53732288;"
+               x="148.97119"
+               y="-519.80084"
+               id="text918-7-0"
+               transform="scale(1.001425,0.99857703)"><tspan
+                 sodipodi:role="line"
+                 id="tspan916-1-0"
+                 x="148.97119"
+                 y="-519.80084"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.53732288;font-size:38.80555551px">3D / 2D</tspan><tspan
+                 sodipodi:role="line"
+                 x="148.97119"
+                 y="-442.93469"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:LilyUPC;-inkscape-font-specification:LilyUPC;fill:#ffffff;stroke:none;stroke-width:1.53732288;"
+                 id="tspan974-7" /></text>
+          </g>
+        </g>
+        <rect
+           style="opacity:1;fill:#eef4d7;fill-opacity:1;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect7901"
+           width="281.87039"
+           height="65.133392"
+           x="331.30542"
+           y="-494.05231" />
+        <g
+           style="stroke-width:0.32920402"
+           inkscape:export-ydpi="25.364071"
+           inkscape:export-xdpi="25.364071"
+           transform="matrix(2.0978957,0,0,3.3005685,-1062.0317,-480.91549)"
+           id="g4609"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_Cam_Right.png">
+          <path
+             sodipodi:nodetypes="cccccccc"
+             inkscape:connector-curvature="0"
+             id="rect4515"
+             d="m 137.20568,174.12897 -0.0112,-7.73548 23.09451,13.92725 -23.09164,13.68281 0.015,-7.60824 -20.3616,1.24183 0.0382,-14.68754 z"
+             style="opacity:1;vector-effect:none;fill:#22280b;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <path
+             sodipodi:nodetypes="cccccccc"
+             inkscape:connector-curvature="0"
+             id="rect4515-6"
+             d="m 138.17,175.23252 0.24867,-6.84641 19.59547,12.03481 -19.77507,11.82997 -0.0631,-6.7394 -19.69981,0.8339 0.002,-11.98582 z"
+             style="opacity:1;vector-effect:none;fill:#cdde87;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.16460201;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        </g>
+        <g
+           style="stroke-width:0.39822969"
+           inkscape:export-ydpi="25.364071"
+           inkscape:export-xdpi="25.364071"
+           transform="matrix(-1.7342647,0,0,2.7284766,-656.99552,-357.94723)"
+           id="g4609-5"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_Cam_Left.png">
+          <path
+             sodipodi:nodetypes="cccccccc"
+             inkscape:connector-curvature="0"
+             id="rect4515-8"
+             d="m 142.12954,165.5709 -0.0136,-9.35741 27.93684,16.84744 -27.93336,16.55175 0.0181,-9.2035 -24.63091,1.50221 0.0462,-17.76714 z"
+             style="opacity:1;vector-effect:none;fill:#22280b;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <path
+             sodipodi:nodetypes="cccccccc"
+             inkscape:connector-curvature="0"
+             id="rect4515-6-0"
+             d="m 143.29606,166.90584 0.30081,-8.28193 23.70414,14.5582 -23.9214,14.31042 -0.0763,-8.15248 -23.83036,1.00874 0.002,-14.49894 z"
+             style="opacity:1;vector-effect:none;fill:#cdde87;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.19911486;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        </g>
+        <g
+           style="stroke-width:0.32920402"
+           inkscape:export-ydpi="25.364071"
+           inkscape:export-xdpi="25.364071"
+           transform="matrix(0,2.0978957,-3.3005686,0,-244.07937,-107.74452)"
+           id="g4609-5-0-1"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_Cam_Down.png">
+          <path
+             sodipodi:nodetypes="cccccccc"
+             inkscape:connector-curvature="0"
+             id="rect4515-8-6-6"
+             d="m 137.20568,174.12897 -0.0112,-7.73548 23.09451,13.92725 -23.09164,13.68281 0.015,-7.60824 -20.3616,1.24183 0.0382,-14.68754 z"
+             style="opacity:1;vector-effect:none;fill:#22280b;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <path
+             sodipodi:nodetypes="cccccccc"
+             inkscape:connector-curvature="0"
+             id="rect4515-6-0-5-2"
+             d="m 138.17,175.23252 0.24867,-6.84641 19.59547,12.03481 -19.77507,11.82997 -0.0631,-6.7394 -19.69981,0.8339 0.002,-11.98582 z"
+             style="opacity:1;vector-effect:none;fill:#cdde87;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.16460201;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        </g>
+        <g
+           style="stroke-width:0.32920402"
+           inkscape:export-ydpi="25.36408"
+           inkscape:export-xdpi="25.36408"
+           transform="matrix(0,-2.0978957,3.3005686,0,-1433.5945,335.55239)"
+           id="g4609-5-0-1-1"
+           inkscape:export-filename="C:\Users\i.elarabi\Pictures\Game_Home_3D\Assets\Sprites\Interface _button\Button_Cam_up.png">
+          <path
+             sodipodi:nodetypes="cccccccc"
+             inkscape:connector-curvature="0"
+             id="rect4515-8-6-6-2"
+             d="m 137.20568,174.12897 -0.0112,-7.73548 23.09451,13.92725 -23.09164,13.68281 0.015,-7.60824 -20.3616,1.24183 0.0382,-14.68754 z"
+             style="opacity:1;vector-effect:none;fill:#22280b;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <path
+             sodipodi:nodetypes="cccccccc"
+             inkscape:connector-curvature="0"
+             id="rect4515-6-0-5-2-8"
+             d="m 138.17,175.23252 0.24867,-6.84641 19.59547,12.03481 -19.77507,11.82997 -0.0631,-6.7394 -19.69981,0.8339 0.002,-11.98582 z"
+             style="opacity:1;vector-effect:none;fill:#cdde87;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.16460201;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        </g>
+      </g>
+      <g
+         id="g7893"
+         transform="translate(365.27382,-241.39835)">
+        <rect
+           y="-604.77661"
+           x="-2.2371938"
+           height="89.839165"
+           width="94.331116"
+           id="rect7840"
+           style="opacity:1;fill:#22280b;fill-opacity:1;stroke:#22280b;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           id="text7844"
+           y="-539.53381"
+           x="3.9734116"
+           style="font-style:normal;font-weight:normal;font-size:56.33176041px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eef4d7;fill-opacity:1;stroke:none;stroke-width:1.40829396"
+           xml:space="preserve"><tspan
+             style="fill:#eef4d7;stroke-width:1.40829396"
+             y="-539.53381"
+             x="3.9734116"
+             id="tspan7842"
+             sodipodi:role="line">3D</tspan></text>
+      </g>
+    </g>
+    <rect
+       style="opacity:0.46400003;fill:#ff0000;stroke:#0000e4;stroke-width:3.35647058;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1087"
+       width="265.01083"
+       height="16.252714"
+       x="-1585.3923"
+       y="-774.25073" />
+    <rect
+       y="204.72649"
+       x="1581.116"
+       height="119.11102"
+       width="208.04726"
+       id="rect4671"
+       style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-opacity:0" />
+    <rect
+       style="opacity:1;fill:#ccff00;fill-opacity:1;stroke:none;stroke-width:3.99999976;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8144"
+       width="960"
+       height="54.532024"
+       x="-1132.5741"
+       y="-1256.9943" />
+  </g>
+</svg>
