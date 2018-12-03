@@ -33,11 +33,25 @@ public class CreateRoom : MonoBehaviour
     GameObject mur8_;
     GameObject sol_;
 
+    GameObject room;
+    static int i = 1;
 
     bool isPressed = false;
 
+    void CreationMur(GameObject g1, GameObject g2, string path, Vector3 position, Vector3 scale)
+    {
+        Debug.Log("creation");
+        g1 = Resources.Load("Rooms/" + path) as GameObject;
+        g2 = Instantiate(g1);
+        g2.name = path;
+        g2.transform.localPosition = position;
+        g2.transform.localScale = scale;
+    }
+
     public void Create_Room()
     {
+        room = new GameObject("room" + i);
+
         if (inputLength.text != "" && inputWidth.text != "")
         {
             width = float.Parse((inputWidth.text));
@@ -46,80 +60,87 @@ public class CreateRoom : MonoBehaviour
 
         isPressed = true;
         //creation du sol de la piece
+
         sol = Resources.Load("Rooms/solPrefab") as GameObject;
-        sol_ = Instantiate(sol);
+        sol_ = Instantiate(sol,room.transform);
         sol_.transform.localScale = new Vector3(sol.transform.localScale.x / 10 * width, 1, sol.transform.localScale.z / 10 * length);
 
-
+        //CreationMur(mur1, mur1_, "mur1", new Vector3(0, 3, length / 2 + .1f), new Vector3(mur1.transform.localScale.x * width, 6, 0.2f));
+        //CreationMur(mur2, mur2_, "mur2", new Vector3(width / 2 + 0.1f, 3, 0), new Vector3(0.2f, 6, length + 0.8f));
+        //CreationMur(mur3, mur3_, "mur3", new Vector3(0, 3, -length / 2 - .1f), mur1_.transform.localScale);
+        //CreationMur(mur4, mur4_, "mur4", new Vector3(-width / 2 - .1f, 3, 0), mur2_.transform.localScale);
+        //CreationMur(mur5, mur5_, "mur5", new Vector3(0, 3, mur1_.transform.localPosition.z + 0.2f), mur1_.transform.localScale);
+        //CreationMur(mur6, mur6_, "mur6", new Vector3(width / 2 + 0.3f, 3, 0), mur2_.transform.localScale);
+        //CreationMur(mur7, mur7_, "mur7", new Vector3(0, 3, mur3_.transform.localPosition.z - 0.2f), mur1_.transform.localScale);
+        //CreationMur(mur8, mur8_, "mur8", new Vector3(mur4_.transform.localPosition.x + .2f, 3, 0), mur2_.transform.localScale);
         //creation des mur interieur de la piece
-        //OK
         mur1 = Resources.Load("Rooms/mur1") as GameObject;
-        mur1_ = Instantiate(mur1);
+        mur1_ = Instantiate(mur1, room.transform);
         mur1_.name = "mur1";
         mur1_.transform.localPosition = new Vector3(0, 3, length/2 + .1f);
         mur1_.transform.localScale = new Vector3(mur1.transform.localScale.x  * width, 6, 0.2f);
 
-        //scale ok
         mur2 = Resources.Load("Rooms/mur2") as GameObject;
-        mur2_ = Instantiate(mur2);
+        mur2_ = Instantiate(mur2, room.transform);
         mur2_.name = "mur2";
         mur2_.transform.localPosition = new Vector3(width/2 + 0.1f, 3, 0);
         mur2_.transform.localScale = new Vector3(0.2f, 6, length + 0.8f);
-        
-        //OK
+
         mur3 = Resources.Load("Rooms/mur3") as GameObject;
-        mur3_ = Instantiate(mur3);
+        mur3_ = Instantiate(mur3, room.transform);
         mur3_.name = "mur3";
         mur3_.transform.localPosition = new Vector3(0, 3, - length/2 - .1f );
         mur3_.transform.localScale = mur1_.transform.localScale;
 
+
+
         mur4 = Resources.Load("Rooms/mur4") as GameObject;
-        mur4_ = Instantiate(mur4);
+        mur4_ = Instantiate(mur4, room.transform);
         mur4_.name = "mur4";
         mur4_.transform.localPosition = new Vector3(- width/2 - .1f, 3, 0);
         mur4_.transform.localScale = mur2_.transform.localScale;
 
-        //creation des mur exterieur de la piece
         mur5 = Resources.Load("Rooms/mur5") as GameObject;
-        mur5_ = Instantiate(mur5);
+        mur5_ = Instantiate(mur5, room.transform);
         mur5_.name = "mur5";
         mur5_.transform.localPosition = new Vector3(0, 3, mur1_.transform.localPosition.z+0.2f);
         mur5_.transform.localScale = mur1_.transform.localScale;
 
         mur6 = Resources.Load("Rooms/mur6") as GameObject;
-        mur6_ = Instantiate(mur6);
+        mur6_ = Instantiate(mur6, room.transform);
         mur6_.name = "mur6";
         mur6_.transform.localPosition = new Vector3(width / 2 + 0.3f, 3, 0);
         mur6_.transform.localScale = mur2_.transform.localScale;
 
         mur7 = Resources.Load("Rooms/mur7") as GameObject;
-        mur7_ = Instantiate(mur7);
+        mur7_ = Instantiate(mur7, room.transform);
         mur7_.name = "mur7";
         mur7_.transform.localPosition = new Vector3(0, 3, mur3_.transform.localPosition.z-0.2f);
         mur7_.transform.localScale = mur1_.transform.localScale;
 
         mur8 = Resources.Load("Rooms/mur8") as GameObject;
-        mur8_ = Instantiate(mur8);
+        mur8_ = Instantiate(mur8, room.transform);
         mur8_.name = "mur8";
         mur8_.transform.localPosition = new Vector3(mur4_.transform.localPosition.x + .2f, 3, 0);
         mur8_.transform.localScale = mur2_.transform.localScale;
-
+        i++;
     }
 
     private void Update()
     {
-        Debug.Log("isPressed : " + isPressed);
+        //Debug.Log("isPressed : " + isPressed);
         if (isPressed)
         {
-        inputLength.text = "";
-        inputWidth.text = "";
+            inputLength.text = "";
+            inputWidth.text = "";
         }
 
         if (inputLength.text != "" && inputWidth.text != "")
         {
             Button_create_room.interactable = true;
         }
-        else {
+        else
+        {
             Button_create_room.interactable = false;
 
         }

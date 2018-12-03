@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{2A6E1A74-8675-5F43-4856-6F1562C2565D}</ProjectGuid>
+    <ProjectGuid>{334FE221-3A11-860C-8581-6D753799A536}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,7 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\deleteScript.cs" />
     <Compile Include="Assets\Scripts\ActionOnObjects\ActionObject.cs" />
     <Compile Include="Assets\Scripts\ActionOnObjects\ColorChoice.cs" />
     <Compile Include="Assets\Scripts\ActionOnObjects\Delete_Button.cs" />
@@ -74,18 +73,19 @@
     <Compile Include="Assets\Scripts\CreationMeuble.cs" />
     <Compile Include="Assets\Scripts\MouseDrag.cs" />
     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\ObjectSelected.cs" />
     <Compile Include="Assets\Scripts\Utils\Utils_.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/ikrame/Music/Game_Home_3D (2)/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/ikrame/Documents/Game_Home_3D/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/ikrame/Music/Game_Home_3D (2)/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/ikrame/Documents/Game_Home_3D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/ikrame/Music/Game_Home_3D (2)/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/ikrame/Documents/Game_Home_3D/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/ikrame/Music/Game_Home_3D (2)/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/ikrame/Documents/Game_Home_3D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -321,7 +321,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{AF4B52E4-7D24-E2AE-1E70-F3E914B09A77}</Project>
+      <Project>{BF65F90D-B753-9668-9C1B-15C4A261CD03}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
