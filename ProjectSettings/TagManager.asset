@@ -11,6 +11,7 @@ TagManager:
   - canevas
   - supprimer
   - furniture
+  - imgMeuble
   layers:
   - Default
   - TransparentFX

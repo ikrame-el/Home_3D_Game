@@ -30,6 +30,7 @@ public class ActionObject : MonoBehaviour
 
     void createButton()
     {
+        
         //menu cadre
         menu_ac = Resources.Load("Button_Actions/menu_ac") as GameObject;
         menu_ac_ = Instantiate(menu_ac, canevas_transform);
@@ -79,6 +80,7 @@ public class ActionObject : MonoBehaviour
 
     public void Deselect()
     {
+     
         isPressed = false;
     }
 

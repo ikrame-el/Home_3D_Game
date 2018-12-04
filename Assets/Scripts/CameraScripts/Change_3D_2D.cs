@@ -8,7 +8,6 @@ public class Change_3D_2D : MonoBehaviour
 
     public Camera cam;
     public GameObject camFPS;
-    public GameObject directionalLight;
 
     //les boutons de la direction de la main camera
     public GameObject b1;
@@ -24,13 +23,13 @@ public class Change_3D_2D : MonoBehaviour
         if (nb % 2 != 0)
         {
             Utils_.Active_Desactive_5(b1, b2, b3, b4, cam.gameObject, false);
-            Utils_.Active_Desactive_2(camFPS, directionalLight, true);
+            camFPS.SetActive(true);
         }
         else
         {
             //GetComponentInChildren<Text>().text = "3D";
             Utils_.Active_Desactive_5(b1, b2, b3, b4, cam.gameObject, true);
-            Utils_.Active_Desactive_2(camFPS,directionalLight,false);
+            camFPS.SetActive(false);
         }
         nb++;
     }
