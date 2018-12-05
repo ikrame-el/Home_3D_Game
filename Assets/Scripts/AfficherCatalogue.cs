@@ -32,12 +32,14 @@ public class AfficherCatalogue : MonoBehaviour
 
     //
     private string button_pressed;
-    private static int i = 1;
+
+    bool isPressed = false;
 
     public void AfficherPieces()
     {
         button_pressed = this.gameObject.name;
-        if (i % 2 != 0)
+        isPressed = !isPressed;
+        if (isPressed)
         {
             Utils_.Active_Desactive_9(bedRoom, livingRoom, bathRoom, kitchen, garden, electro, door, window,menu_furniture, true);
         }
@@ -46,10 +48,7 @@ public class AfficherCatalogue : MonoBehaviour
             Utils_.Active_Desactive_9(bedRoom, livingRoom, bathRoom, kitchen, garden, electro, door, window, menu_furniture, false);
             Utils_.Active_Desactive_9(panelWindow, panelBathRoom, panelKitchen, panelLivingRoom, panelDoor, panelElectro, panelGarden, panelBedRoom, panelFurniture, false);
         }
-        i++;
     }
-
-
 
     public void Bed_down()
     {

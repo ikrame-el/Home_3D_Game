@@ -16,21 +16,20 @@ public class Change_3D_2D : MonoBehaviour
     public GameObject b4;
 
     static int nb = 1;
-
+    bool isPressed = false;
 
     public void ChangeCamera()
     {
-        if (nb % 2 != 0)
+        isPressed = !isPressed;
+        if (isPressed)
         {
             Utils_.Active_Desactive_5(b1, b2, b3, b4, cam.gameObject, false);
             camFPS.SetActive(true);
         }
         else
         {
-            //GetComponentInChildren<Text>().text = "3D";
             Utils_.Active_Desactive_5(b1, b2, b3, b4, cam.gameObject, true);
             camFPS.SetActive(false);
         }
-        nb++;
     }
 }

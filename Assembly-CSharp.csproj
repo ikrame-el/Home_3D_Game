@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\CameraScripts\PositionCamera.cs" />
     <Compile Include="Assets\Scripts\CameraScripts\Zoom.cs" />
     <Compile Include="Assets\Scripts\ChangeColor.cs" />
+    <Compile Include="Assets\Scripts\ColorManager.cs" />
     <Compile Include="Assets\Scripts\CreateRoom.cs" />
     <Compile Include="Assets\Scripts\CreationMeuble.cs" />
     <Compile Include="Assets\Scripts\MouseDrag.cs" />

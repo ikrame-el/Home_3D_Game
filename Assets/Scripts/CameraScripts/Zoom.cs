@@ -21,7 +21,7 @@ public class Zoom : MonoBehaviour
         float zoomDelta = Input.GetAxis("Zoom") * speed;
         zoom += zoomDelta;
 
-        if (zoom>0)
+        if (zoom>=0)
         {
             mainCamera.orthographicSize = zoom;
         }

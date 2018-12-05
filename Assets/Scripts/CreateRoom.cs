@@ -10,17 +10,18 @@ public class CreateRoom : MonoBehaviour
     public Text inputWidth;
     public Text inputLength;
 
+    public InputField input1;
+    public InputField input2;
+    public Image menu;
+    public Text text1;
+    public Text text2;
+
+
+
+
     float width;
     float length;
 
-    GameObject mur1;
-    GameObject mur2;
-    GameObject mur3;
-    GameObject mur4;
-    GameObject mur5;
-    GameObject mur6;
-    GameObject mur7;
-    GameObject mur8;
     GameObject sol;
 
     GameObject mur1_;
@@ -44,7 +45,7 @@ public class CreateRoom : MonoBehaviour
     void CreationMur(GameObject g1, out GameObject g2, string path, Vector3 position, Vector3 scale)
     {
         Debug.Log("creation");
-        g2 = Instantiate(g1);
+        g2 = Instantiate(g1, room.transform);
         g2.name = path;
         g2.transform.localPosition = position;
         g2.transform.localScale = scale;
@@ -82,25 +83,37 @@ public class CreateRoom : MonoBehaviour
         CreationMur(tabMur[7], out mur8_, "mur8", new Vector3(mur4_.transform.localPosition.x + .2f, 3, 0), mur2_.transform.localScale);
 
         i++;
+        inputLength.text = " ";
+        inputWidth.text = " ";
+    }
+
+    public void OnClick_Create_Room()
+    {
+        isPressed = !isPressed;
+        if (isPressed)
+        {
+            Debug.Log("Ispressed ...... IF");
+            Utils_.Active_Desactive_5(input1.gameObject, input2.gameObject,menu.gameObject, text1.gameObject,text2.gameObject, true);
+        }
+        else
+        {
+            Debug.Log("Ispressed ...... Else");
+            Utils_.Active_Desactive_5(input1.gameObject, input2.gameObject, menu.gameObject, text1.gameObject, text2.gameObject, false);
+
+        }
+
     }
 
     private void Update()
     {
-        //Debug.Log("isPressed : " + isPressed);
-        if (isPressed)
+        if (inputLength.text != "" && inputWidth.text != "")
         {
-            inputLength.text = "";
-            inputWidth.text = "";
-            Button_create_room.interactable = false;
-        }
-        else
-        {
-            Button_create_room.interactable = true;
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                Create_Room();
+                Utils_.Active_Desactive_5(input1.gameObject, input2.gameObject, menu.gameObject, text1.gameObject, text2.gameObject, false);
+            }
         }
 
-        /*if (inputLength.text != "" && inputWidth.text != "")
-        {
-
-        }*/
     }
 }
