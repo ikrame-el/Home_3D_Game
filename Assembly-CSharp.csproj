@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\MouseDrag.cs" />
     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\ObjectSelected.cs" />
+    <Compile Include="Assets\Scripts\Utils\ColorTab.cs" />
     <Compile Include="Assets\Scripts\Utils\Utils_.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/i.elarabi/Documents/AProjetFIN/game_home_3d/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
