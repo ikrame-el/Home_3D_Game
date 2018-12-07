@@ -124,6 +124,7 @@ public class AfficherCatalogue : MonoBehaviour
                     Utils_.Active_Desactive_7(panelBathRoom, panelKitchen, panelLivingRoom, panelDoor, panelBedRoom, panelGarden, panelWindow, false);
                     break;
             }
+           
         }
     }
 }

@@ -66,11 +66,13 @@
     <Compile Include="Assets\Scripts\ActionOnObjects\Delete_Button.cs" />
     <Compile Include="Assets\Scripts\ActionOnObjects\Rotation_button.cs" />
     <Compile Include="Assets\Scripts\AfficherCatalogue.cs" />
+    <Compile Include="Assets\Scripts\Button_Color.cs" />
     <Compile Include="Assets\Scripts\CameraScripts\Change_3D_2D.cs" />
     <Compile Include="Assets\Scripts\CameraScripts\PositionCamera.cs" />
     <Compile Include="Assets\Scripts\CameraScripts\Zoom.cs" />
     <Compile Include="Assets\Scripts\ChangeColor.cs" />
     <Compile Include="Assets\Scripts\ColorManager.cs" />
+    <Compile Include="Assets\Scripts\ColorPick.cs" />
     <Compile Include="Assets\Scripts\CreateRoom.cs" />
     <Compile Include="Assets\Scripts\CreationMeuble.cs" />
     <Compile Include="Assets\Scripts\MouseDrag.cs" />

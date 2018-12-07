@@ -5,8 +5,11 @@ using UnityEngine.UI;
 
 public class ObjectSelected : MonoBehaviour
 {
+    public Text textColor;
+    public GameObject panelMenuColor;
+    public GameObject panelColorPalette;
     public static GameObject currentObject;
-    public Image[] tabImage = new Image[10];
+    public Button[] tabButton = new Button[8];
     Material[] tabMaterials;
 
     void Update()
@@ -32,11 +35,29 @@ public class ObjectSelected : MonoBehaviour
                     for (int i = 0; i < tabMaterials.Length; i++)
                     {
                         Debug.Log("Material : " + tabMaterials[i].name);
-                        tabImage[i].color = tabMaterials[i].color;
-
+                        //tabButton[i].color = tabMaterials[i].color;
+                        tabButton[i].GetComponent<Image>().color = tabMaterials[i].color;
                     }
                 }
             }
         }
+
+        if (ActionObject.active)
+        {
+            for (int i = 0; i < tabButton.Length; i++)
+            {
+                tabButton[i].gameObject.SetActive(true);
+            }
+            Utils_.Active_Desactive_2(panelMenuColor, textColor.gameObject, true);
+        }
+        else
+        {
+            for (int i = 0; i < tabButton.Length; i++)
+            {
+                tabButton[i].gameObject.SetActive(false);
+            }
+            Utils_.Active_Desactive_2(panelMenuColor, textColor.gameObject, false);
+        }
+
     }
 }

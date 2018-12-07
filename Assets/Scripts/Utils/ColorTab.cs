@@ -111,6 +111,113 @@ public class ColorTab : MonoBehaviour
     public static Color Color89 = new Color(230, 230, 230, 255);
     public static Color Color90 = new Color(255, 255, 255, 255);
 
+    ////===================1====================
+    //tabColor[0] = new Color(43, 0, 0,255);
+    //tabColor[1] = new Color(128, 0, 0,255);//, 255);
+    //tabColor[2] = new Color(212, 0, 0,255);//, 255);
+    //tabColor[3] = new Color(255, 0, 0,255);//, 255);
+    //tabColor[4] = new Color(255, 128, 128,255);//, 255);
+    //tabColor[5] = new Color(255, 213, 213,255);//, 255);
+
+    ////===================2====================
+    //tabColor[6] = new Color(43, 17, 0, 255);
+    //tabColor[7] = new Color(85, 34, 0, 255);
+    //tabColor[8] = new Color(170, 68, 0, 255);
+    //tabColor[9] = new Color(255, 102, 0, 255);
+    //tabColor[10] = new Color(255, 153, 85, 255);
+    //tabColor[11] = new Color(255, 204, 170, 255);
+    ////===================3====================
+    //tabColor[12] = new Color(43, 34, 0, 255);
+    //tabColor[13] = new Color(85, 68, 0, 255);
+    //tabColor[14] = new Color(170, 136, 0, 255);
+    //tabColor[15] = new Color(255, 204, 0, 255);
+    //tabColor[16] = new Color(255, 221, 85, 255);
+    //tabColor[17] = new Color(255, 238, 170, 255);
+    ////===================4====================
+    //tabColor[18] = new Color(43, 43, 0, 255);
+    //tabColor[19] = new Color(68, 85, 0, 255);
+    //tabColor[20] = new Color(136, 170, 0, 255);
+    //tabColor[21] = new Color(204, 255, 0, 255);
+    //tabColor[22] = new Color(221, 255, 85, 255);
+    //tabColor[23] = new Color(238, 255, 170, 255);
+    ////===================5====================
+    //tabColor[24] = new Color(17, 43, 0, 255);
+    //tabColor[25] = new Color(34, 85, 0, 255);
+    //tabColor[26] = new Color(68, 170, 0, 255);
+    //tabColor[27] = new Color(102, 255, 0, 255);
+    //tabColor[28] = new Color(153, 255, 85, 255);
+    //tabColor[29] = new Color(204, 255, 170, 255);
+    ////===================6====================
+    //tabColor[30] = new Color(0, 43, 0, 255);
+    //tabColor[31] = new Color(0, 128, 0, 255);
+    //tabColor[32] = new Color(0, 212, 0, 255);
+    //tabColor[33] = new Color(85, 255, 85, 255);
+    //tabColor[34] = new Color(128, 255, 128, 255);
+    //tabColor[35] = new Color(213, 255, 213, 255);
+    ////===================7====================
+    //tabColor[36] = new Color(0, 43, 34, 255);
+    //tabColor[37] = new Color(0, 128, 102, 255);
+    //tabColor[38] = new Color(0, 212, 170, 255);
+    //tabColor[39] = new Color(0, 255, 204, 255);
+    //tabColor[40] = new Color(85, 255, 221, 255);
+    //tabColor[41] = new Color(170, 255, 238, 255);
+    ////===================8====================
+    //tabColor[42] = new Color(0, 34, 43, 255);
+    //tabColor[43] = new Color(0, 102, 128, 255);
+    //tabColor[44] = new Color(0, 170, 212, 255);
+    //tabColor[45] = new Color(0, 204, 255, 255);
+    //tabColor[46] = new Color(85, 221, 255, 255);
+    //tabColor[47] = new Color(170, 238, 255, 255);
+    ////==================9=====================
+    //tabColor[48] = new Color(0, 17, 43, 255);
+    //tabColor[50] = new Color(0, 51, 128, 255);
+    //tabColor[51] = new Color(0, 68, 170, 255);
+    //tabColor[52] = new Color(0, 102, 255, 255);
+    //tabColor[53] = new Color(85, 153, 255, 255);
+    //tabColor[54] = new Color(170, 204, 255, 255);
+    ////==================10====================
+    //tabColor[55] = new Color(0, 0, 85, 255);
+    //tabColor[56] = new Color(0, 0, 170, 255);
+    //tabColor[57] = new Color(0, 0, 255, 255);
+    //tabColor[58] = new Color(85, 85, 255, 255);
+    //tabColor[59] = new Color(128, 128, 255, 255);
+    //tabColor[60] = new Color(213, 213, 255, 255);
+    ////=================11=====================
+    //tabColor[61] = new Color(17, 0, 43, 255);
+    //tabColor[62] = new Color(34, 0, 85, 255);
+    //tabColor[63] = new Color(85, 0, 212, 255);
+    //tabColor[64] = new Color(153, 85, 255, 255);
+    //tabColor[65] = new Color(204, 170, 255, 255);
+    //tabColor[66] = new Color(229, 213, 255, 255);
+    ////=================12=====================
+    //tabColor[67] = new Color(34, 0, 43, 255);
+    //tabColor[68] = new Color(68, 0, 85, 255);
+    //tabColor[69] = new Color(136, 0, 170, 255);
+    //tabColor[70] = new Color(204, 0, 255, 255);
+    //tabColor[71] = new Color(221, 85, 255, 255);
+    //tabColor[72] = new Color(238, 170, 255, 255);
+    ////==================13====================
+    //tabColor[73] = new Color(43, 0, 34, 255);
+    //tabColor[74] = new Color(128, 0, 102, 255);
+    //tabColor[75] = new Color(212, 0, 170, 255);
+    //tabColor[76] = new Color(255, 0, 204, 255);
+    //tabColor[77] = new Color(255, 85, 221, 255);
+    //tabColor[78] = new Color(255, 213, 246, 255);
+    ////=================14=====================
+    //tabColor[79] = new Color(40, 11, 34, 255);
+    //tabColor[80] = new Color(128, 0, 51, 255);
+    //tabColor[81] = new Color(170, 0, 68, 255);
+    //tabColor[82] = new Color(255, 0, 102, 255);
+    //tabColor[83] = new Color(255, 85, 153, 255);
+    //tabColor[83] = new Color(255, 170, 204, 255);
+    ////=================15=====================
+    //tabColor[84] = new Color(0, 0, 0, 255);
+    //tabColor[85] = new Color(26, 26, 26, 255);
+    //tabColor[86] = new Color(77, 77, 77, 255);
+    //tabColor[87] = new Color(153, 153, 153, 255);
+    //tabColor[88] = new Color(230, 230, 230, 255);
+    //color89 = new Color(255, 255, 255, 255);
+
     public static Color GetColor_(int i)
     {
         switch (i)
