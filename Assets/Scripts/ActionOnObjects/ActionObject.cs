@@ -60,6 +60,7 @@ public class ActionObject : MonoBehaviour
         active = true;
         //Ici on deselectionne tous les autres objets qui ont le script ActionObject
         ActionObject[] objects = GameObject.FindObjectsOfType<ActionObject>();
+
         foreach (var item in objects)
         {
             if (item != this)

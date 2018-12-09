@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4482475, g: 0.49827462, b: 0.57558316, a: 1}
+  m_IndirectSpecularColor: {r: 0.4482475, g: 0.49827433, b: 0.5755824, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2257,6 +2257,7 @@ GameObject:
   - component: {fileID: 169195427}
   - component: {fileID: 169195426}
   - component: {fileID: 169195425}
+  - component: {fileID: 169195428}
   m_Layer: 5
   m_Name: Button_color8
   m_TagString: Untagged
@@ -2320,7 +2321,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 169195426}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 528586250}
+        m_MethodName: ColorManager_Avec_Bouton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 457158847}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &169195426
@@ -2357,6 +2380,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 169195423}
   m_CullTransparentMesh: 0
+--- !u!114 &169195428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 169195423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a98fb743c2c0d74eaf88408084afc03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numButton: 7
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -4634,6 +4669,7 @@ GameObject:
   - component: {fileID: 457158851}
   - component: {fileID: 457158850}
   - component: {fileID: 457158849}
+  - component: {fileID: 457158852}
   m_Layer: 5
   m_Name: Button_color2
   m_TagString: Untagged
@@ -4697,7 +4733,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 457158850}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 528586250}
+        m_MethodName: ColorManager_Avec_Bouton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 457158847}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &457158850
@@ -4734,6 +4792,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 457158847}
   m_CullTransparentMesh: 0
+--- !u!114 &457158852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 457158847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a98fb743c2c0d74eaf88408084afc03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numButton: 1
 --- !u!1 &462297316
 GameObject:
   m_ObjectHideFlags: 0
@@ -5131,7 +5201,9 @@ MonoBehaviour:
   ImageColoPrefab: {fileID: 1931229669187982, guid: 41431a905665e774385c3782746c6fe5,
     type: 2}
   ImagePosition: {x: 0, y: 0, z: 0}
-  panelColorPalette: {fileID: 0}
+  panelColorPalette: {fileID: 47078892}
+  tabImage: []
+  tabStockageImage: []
   tabMat:
   - {fileID: 2100000, guid: deaa53352768e3a48aee1b908412746f, type: 2}
   - {fileID: 2100000, guid: 893dd130873452c4fbc62b4a2cc73de0, type: 2}
@@ -5144,6 +5216,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 54f67f1b187beac4e94bc316193a238b, type: 2}
   - {fileID: 2100000, guid: 917fa5e1a7fd2224d8635207d8c1e9c2, type: 2}
   - {fileID: 2100000, guid: 398797e0d0f9b20418111c8ce18f9bb3, type: 2}
+  - {fileID: 2100000, guid: e81732c91f1a4b5409141222f3e533f5, type: 2}
   - {fileID: 2100000, guid: 09922a23f195ee94b99d5310fbeaa02a, type: 2}
   - {fileID: 2100000, guid: ff083f2b13ae3da4cbda4bb0a158a579, type: 2}
   - {fileID: 2100000, guid: 5aca1a54bb5b7404c8d238186771c5b8, type: 2}
@@ -5156,18 +5229,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b186f14e3f1b50044bf7c90808afd369, type: 2}
   - {fileID: 2100000, guid: 610af96ef00ac7047b1309ddd6a84c10, type: 2}
   - {fileID: 2100000, guid: 7a47829a443760c45b8911fab892b15d, type: 2}
-  - {fileID: 2100000, guid: 358f5e798e33bdf47b977dc3e47235a1, type: 2}
-  - {fileID: 2100000, guid: 950b9502d2c31a948b7e2b8594dc4a92, type: 2}
-  - {fileID: 2100000, guid: b79c639b69f2acc429608128a72c599c, type: 2}
-  - {fileID: 2100000, guid: a9b144e31cd44c440b8ecb9eec4b14c3, type: 2}
-  - {fileID: 2100000, guid: 8344e3d82c047694fbe70c0d0a92c042, type: 2}
-  - {fileID: 2100000, guid: bc456dba52beb354882a42ff929dff44, type: 2}
-  - {fileID: 2100000, guid: 959a280a3a040a64eb579686722d432b, type: 2}
-  - {fileID: 2100000, guid: 401363649c2406147b92d2531e4d01ff, type: 2}
-  - {fileID: 2100000, guid: 802e58391638dd641a5ebf3124e54402, type: 2}
-  - {fileID: 2100000, guid: 52b7c9bb45f98354dad4ed9d7a77a8e2, type: 2}
-  - {fileID: 2100000, guid: 8167bcac8bfc35c478a138a4543d6962, type: 2}
-  - {fileID: 2100000, guid: e6e5f536468b15d4dab43e7267e1f1a5, type: 2}
   - {fileID: 2100000, guid: 5c5824800e6e0184296e902ebcdf01fc, type: 2}
   - {fileID: 2100000, guid: bcbd73cd356820044928aea4a23a52fc, type: 2}
   - {fileID: 2100000, guid: 6d5cec5fc68d67e4ca9e35b721d3aa41, type: 2}
@@ -5192,6 +5253,18 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 278aa7bc8a42ba64c9079237b012345d, type: 2}
   - {fileID: 2100000, guid: 0522e107975f8c44bbf5a02d20dbb3ba, type: 2}
   - {fileID: 2100000, guid: 44879498d47834b4b944f8e53ce57bcf, type: 2}
+  - {fileID: 2100000, guid: 358f5e798e33bdf47b977dc3e47235a1, type: 2}
+  - {fileID: 2100000, guid: 950b9502d2c31a948b7e2b8594dc4a92, type: 2}
+  - {fileID: 2100000, guid: b79c639b69f2acc429608128a72c599c, type: 2}
+  - {fileID: 2100000, guid: a9b144e31cd44c440b8ecb9eec4b14c3, type: 2}
+  - {fileID: 2100000, guid: 8344e3d82c047694fbe70c0d0a92c042, type: 2}
+  - {fileID: 2100000, guid: bc456dba52beb354882a42ff929dff44, type: 2}
+  - {fileID: 2100000, guid: 959a280a3a040a64eb579686722d432b, type: 2}
+  - {fileID: 2100000, guid: 401363649c2406147b92d2531e4d01ff, type: 2}
+  - {fileID: 2100000, guid: 802e58391638dd641a5ebf3124e54402, type: 2}
+  - {fileID: 2100000, guid: 52b7c9bb45f98354dad4ed9d7a77a8e2, type: 2}
+  - {fileID: 2100000, guid: 8167bcac8bfc35c478a138a4543d6962, type: 2}
+  - {fileID: 2100000, guid: e6e5f536468b15d4dab43e7267e1f1a5, type: 2}
   - {fileID: 2100000, guid: 38f6f494142ae564f9a49caae8280c57, type: 2}
   - {fileID: 2100000, guid: 4a141f30ef35985438ddb33efc0e8a34, type: 2}
   - {fileID: 2100000, guid: a0a7943d718f2e948b9e8e85db64c1a6, type: 2}
@@ -5217,14 +5290,15 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 5423f294c86d11245a80cdb9d8882337, type: 2}
   - {fileID: 2100000, guid: 623b81865705b7940a213cb4c3904bbc, type: 2}
   - {fileID: 2100000, guid: 31920e87616831441b61ffbf4d5bbff5, type: 2}
+  - {fileID: 2100000, guid: 623b81865705b7940a213cb4c3904bbc, type: 2}
   - {fileID: 2100000, guid: fbc9914f7a322e8479f4ea22fa19ebb5, type: 2}
   - {fileID: 2100000, guid: af71b0887b1f3c3469142af262be5f66, type: 2}
   - {fileID: 2100000, guid: 406fc9d8a24d1894fa8255098dccbf82, type: 2}
-  - {fileID: 2100000, guid: 406fc9d8a24d1894fa8255098dccbf82, type: 2}
-  - {fileID: 2100000, guid: 4f3c0828c250f7e488b2201281672f6c, type: 2}
   - {fileID: 2100000, guid: fec2cb2203ed30d4d862c9c603b2dac6, type: 2}
-  tabImage: []
-  tabStockageImage: []
+  buttonColorPrefab: {fileID: 1152625940569830, guid: e7153f075dea144498ee374f1078d3a1,
+    type: 2}
+  tabButton: []
+  tabStockageButton: []
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -6551,7 +6625,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 736266297}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 528586250}
+        m_MethodName: ColorManager_Avec_Bouton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1004028261}
+        m_MethodName: Num_Button_Preesed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &736266297
@@ -6662,7 +6758,7 @@ GameObject:
   - component: {fileID: 782304513}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: unselectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7451,6 +7547,7 @@ GameObject:
   - component: {fileID: 1004028260}
   - component: {fileID: 1004028259}
   - component: {fileID: 1004028258}
+  - component: {fileID: 1004028261}
   m_Layer: 5
   m_Name: Button_color1
   m_TagString: Untagged
@@ -7515,12 +7612,23 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 528586250}
-        m_MethodName: ColorManager_
+      - m_Target: {fileID: 1004028261}
+        m_MethodName: Num_Button_Preesed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1004028256}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7562,6 +7670,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1004028256}
   m_CullTransparentMesh: 0
+--- !u!114 &1004028261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1004028256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a98fb743c2c0d74eaf88408084afc03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numButton: 0
 --- !u!1001 &1035593260
 Prefab:
   m_ObjectHideFlags: 0
@@ -10664,6 +10784,7 @@ GameObject:
   - component: {fileID: 1571140636}
   - component: {fileID: 1571140635}
   - component: {fileID: 1571140634}
+  - component: {fileID: 1571140637}
   m_Layer: 5
   m_Name: Button_color4
   m_TagString: Untagged
@@ -10727,7 +10848,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1571140635}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 528586250}
+        m_MethodName: ColorManager_Avec_Bouton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 457158847}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1571140635
@@ -10764,6 +10907,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1571140632}
   m_CullTransparentMesh: 0
+--- !u!114 &1571140637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1571140632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a98fb743c2c0d74eaf88408084afc03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numButton: 3
 --- !u!1 &1575343376
 GameObject:
   m_ObjectHideFlags: 0
@@ -12988,6 +13143,7 @@ GameObject:
   - component: {fileID: 1999169721}
   - component: {fileID: 1999169720}
   - component: {fileID: 1999169719}
+  - component: {fileID: 1999169722}
   m_Layer: 5
   m_Name: Button_color6
   m_TagString: Untagged
@@ -13051,7 +13207,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1999169720}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 528586250}
+        m_MethodName: ColorManager_Avec_Bouton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 457158847}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1999169720
@@ -13088,6 +13266,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1999169717}
   m_CullTransparentMesh: 0
+--- !u!114 &1999169722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1999169717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a98fb743c2c0d74eaf88408084afc03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numButton: 5
 --- !u!1001 &2002986574
 Prefab:
   m_ObjectHideFlags: 0
@@ -13573,6 +13763,7 @@ GameObject:
   - component: {fileID: 2049662353}
   - component: {fileID: 2049662352}
   - component: {fileID: 2049662351}
+  - component: {fileID: 2049662354}
   m_Layer: 5
   m_Name: Button_color5
   m_TagString: Untagged
@@ -13636,7 +13827,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2049662352}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 528586250}
+        m_MethodName: ColorManager_Avec_Bouton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 457158847}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2049662352
@@ -13673,6 +13886,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2049662349}
   m_CullTransparentMesh: 0
+--- !u!114 &2049662354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2049662349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a98fb743c2c0d74eaf88408084afc03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numButton: 4
 --- !u!1001 &2058405731
 Prefab:
   m_ObjectHideFlags: 0
@@ -14066,6 +14291,7 @@ GameObject:
   - component: {fileID: 2105632288}
   - component: {fileID: 2105632287}
   - component: {fileID: 2105632286}
+  - component: {fileID: 2105632289}
   m_Layer: 5
   m_Name: Button_color7
   m_TagString: Untagged
@@ -14129,7 +14355,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2105632287}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 528586250}
+        m_MethodName: ColorManager_Avec_Bouton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 457158847}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2105632287
@@ -14166,6 +14414,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2105632284}
   m_CullTransparentMesh: 0
+--- !u!114 &2105632289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2105632284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a98fb743c2c0d74eaf88408084afc03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numButton: 6
 --- !u!1 &2126009676
 GameObject:
   m_ObjectHideFlags: 0

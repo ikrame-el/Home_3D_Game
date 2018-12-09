@@ -12,6 +12,7 @@ TagManager:
   - supprimer
   - furniture
   - imgMeuble
+  - unselectable
   layers:
   - Default
   - TransparentFX
