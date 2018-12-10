@@ -45,7 +45,7 @@ public class ColorManager : MonoBehaviour
             {
                 m = 0;
                 while (m < 9)
-                { 
+                {
                     GameObject currentImage = Instantiate(ImageColoPrefab, canvas.transform) as GameObject;
                     Image img = currentImage.GetComponent<Image>();
                     img.name = "img-" + i;
@@ -63,6 +63,8 @@ public class ColorManager : MonoBehaviour
             cpt++;
         }
     }
+
+
 
 
     public void ColorManager_Avec_Bouton()
@@ -99,13 +101,15 @@ public class ColorManager : MonoBehaviour
     }
 
 
-   /* private void Update()
+    private void Update()
     {
-        for (int i = 0; i < tabButton.Length; i++)
+        if (Input.GetMouseButtonDown(1))
         {
-        tabButton[i].GetComponent<Change_Color>().i= i;
+           // panelColorPalette
+
         }
-    }*/
+
+    }
 
 }
 
