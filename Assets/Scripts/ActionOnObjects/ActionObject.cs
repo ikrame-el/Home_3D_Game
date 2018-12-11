@@ -35,7 +35,7 @@ public class ActionObject : MonoBehaviour
         //menu cadre
         menu_ac = Resources.Load("Button_Actions/menu_ac") as GameObject;
         menu_ac_ = Instantiate(menu_ac, canevas_transform);
-        
+
         //delete bouton
         b_delete = Resources.Load("Button_Actions/Button_delete") as GameObject;
         b_delete_ = Instantiate(b_delete, canevas_transform);
@@ -51,7 +51,7 @@ public class ActionObject : MonoBehaviour
         //texture bouton
         b_texture = Resources.Load("Button_Actions/Button_texture") as GameObject;
         b_texture_ = Instantiate(b_texture, canevas_transform);
-        
+
     }
 
 
@@ -69,11 +69,11 @@ public class ActionObject : MonoBehaviour
             }
         }
 
-        if (b_delete_ == null &&  b_rotate_ == null && b_texture_ == null && menu_ac_ == null)
+        if (b_delete_ == null && b_rotate_ == null && b_texture_ == null && menu_ac_ == null)
         {
             createButton();
         }
-      
+
         Utils_.Active_Desactive_4(b_delete_, b_rotate_, b_texture_, menu_ac_, true);
 
         b_delete_.GetComponent<Delete_Button>().current_furniture = this;
@@ -84,7 +84,7 @@ public class ActionObject : MonoBehaviour
 
     public void Deselect()
     {
-     
+
         isPressed = false;
     }
 
@@ -92,6 +92,7 @@ public class ActionObject : MonoBehaviour
     {
         Utils_.Active_Desactive_4(b_delete_, b_rotate_, b_texture_, menu_ac_, false);
         Destroy(gameObject);
+        active = false;
     }
 
 
@@ -107,21 +108,24 @@ public class ActionObject : MonoBehaviour
         if (isPressed)
         {
             //deplacement d'un meuble dans la scene
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (ObjectSelected.currentObject.tag != "room" && ObjectSelected.currentObject != null)
             {
-                transform.position += new Vector3(-.5f, 0, 0);
-            }
-            if (Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                transform.position += new Vector3(.5f, 0, 0);
-            }
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                this.transform.position += new Vector3(0, 0, .5f);
-            }
-            if (Input.GetKeyDown(KeyCode.DownArrow))
-            {
-                this.transform.position += new Vector3(0, 0, -.5f);
+                if (Input.GetKeyDown(KeyCode.LeftArrow))
+                {
+                    transform.position += new Vector3(-.5f, 0, 0);
+                }
+                if (Input.GetKeyDown(KeyCode.RightArrow))
+                {
+                    transform.position += new Vector3(.5f, 0, 0);
+                }
+                if (Input.GetKeyDown(KeyCode.UpArrow))
+                {
+                    this.transform.position += new Vector3(0, 0, .5f);
+                }
+                if (Input.GetKeyDown(KeyCode.DownArrow))
+                {
+                    this.transform.position += new Vector3(0, 0, -.5f);
+                }
             }
 
             if (Input.GetMouseButtonDown(1) && b_delete_ != null && b_rotate_ != null && b_texture_ != null && menu_ac_ != null)

@@ -12,56 +12,8 @@ public class ObjectSelected : MonoBehaviour
     public Button[] tabButton = new Button[8];
     Material[] tabMaterials;
 
-    BuutonClickColor buttonClickColor; 
-
-    /*public void Change_material_current()
-    {
-        int numButton = buttonClickColor.Button_Pressed();
-
-        switch (numButton)
-        {
-            case 0:  switch (numButton)
-            {
-                case 0 : 
-                    break;
-                case 1:
-                    break;
-                case 2:
-                    break;
-                case 3:
-                    break;
-                case 4:
-                    break;
-                case 5:
-                    break;
-                case 6:
-                    break;
-                case 7:
-                    break;
-            }
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            case 4:
-                break;
-            case 5:
-                break;
-            case 6:
-                break;
-            case 7:
-                break;
-        }
-    }*/
-
-
-
     void Update()
     {
-        
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
@@ -71,7 +23,7 @@ public class ObjectSelected : MonoBehaviour
                 if (hit.collider.gameObject.tag != "unselectable")
                 {
                     currentObject = hit.collider.gameObject;
-                    Debug.Log("currentObject : " + currentObject.name);
+                    Debug.Log("currentObject.name: " + currentObject.name + " --  currentObject.tag : " + currentObject.tag);
                     if (currentObject.tag == "Room")
                     {
                         currentObject = CreateRoom.room.gameObject;

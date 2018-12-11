@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class ColorManager : MonoBehaviour
 {
-
-    //ATTENTION REGLER LE PROBLEME DU CLONE
-
     public Canvas canvas;
 
     public GameObject ImageColoPrefab;
@@ -29,10 +26,10 @@ public class ColorManager : MonoBehaviour
     public GameObject[] tabButton;
     public Button[] tabStockageButton;
 
+
+
     public void ColorManager_()
     {
-
-
         tabImage = new GameObject[90];
         tabStockageImage = new Image[tabImage.Length];
 
@@ -64,8 +61,7 @@ public class ColorManager : MonoBehaviour
         }
     }
 
-
-
+    GameObject[] btnTabTag;
 
     public void ColorManager_Avec_Bouton()
     {
@@ -84,6 +80,7 @@ public class ColorManager : MonoBehaviour
                     GameObject currentButton = Instantiate(buttonColorPrefab, canvas.transform) as GameObject;
                     Button btn = currentButton.GetComponent<Button>();
                     btn.name = "" + i;
+                    btn.tag = "btn";
                     btn.GetComponent<Image>().color = tabMat[i].color;
                     RectTransform rectTransform = currentButton.GetComponent<RectTransform>();
                     rectTransform.transform.localPosition = new Vector3(posiXDefault + (m * 18), posiYDefault - (k * 18), 0);
@@ -96,19 +93,37 @@ public class ColorManager : MonoBehaviour
             }
             panelColorPalette.SetActive(true);
             cpt++;
+            btnTabTag = GameObject.FindGameObjectsWithTag("btn");
+        }
+        else
+        {
+            ActiverPaletteCouleur(true);
         }
         tabStockageMat = tabMat;
     }
 
+   
+
+    static int cnt = 0;
+    void ActiverPaletteCouleur(bool leBool)
+    {
+        cnt++;
+        
+        panelColorPalette.SetActive(leBool);
+
+        for (int i = 0; i < btnTabTag.Length; i++)
+        {
+            btnTabTag[i].SetActive(leBool);
+           // Debug.Log("bouton : " + btnTabTag[i]);
+        }
+    }
 
     private void Update()
     {
         if (Input.GetMouseButtonDown(1))
         {
-           // panelColorPalette
-
+            ActiverPaletteCouleur(false);
         }
-
     }
 
 }

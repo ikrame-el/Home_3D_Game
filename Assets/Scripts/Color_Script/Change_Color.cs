@@ -15,7 +15,7 @@ public class Change_Color : MonoBehaviour, IPointerClickHandler
     {
         numBtn = BuutonClickColor.numButton;
 
-        Debug.Log("this : " + this);
+        //Debug.Log("this : " + this);
         int a = name.Length - 7;
         int b = name.Length - 1;
         //Debug.Log("a: " + a + " - b : " + b);
@@ -26,7 +26,7 @@ public class Change_Color : MonoBehaviour, IPointerClickHandler
         //Debug.Log("ChangerCouleurClick -- " + "current object : " + current.name );
         i = int.Parse(this.name);
 
-        Debug.Log("numBtn : " + numBtn);
+        //Debug.Log("numBtn : " + numBtn);
         current.GetComponent<MeshRenderer>().materials[numBtn].color = ColorManager.tabStockageMat[i].color;
     }
 

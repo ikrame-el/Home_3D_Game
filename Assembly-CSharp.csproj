@@ -70,11 +70,11 @@
     <Compile Include="Assets\Scripts\CameraScripts\Change_3D_2D.cs" />
     <Compile Include="Assets\Scripts\CameraScripts\PositionCamera.cs" />
     <Compile Include="Assets\Scripts\CameraScripts\Zoom.cs" />
+    <Compile Include="Assets\Scripts\ChangeScaleMur.cs" />
     <Compile Include="Assets\Scripts\Color_Script\BuutonClickColor.cs" />
     <Compile Include="Assets\Scripts\Color_Script\Change_Color.cs" />
     <Compile Include="Assets\Scripts\Color_Script\ColorManager.cs" />
     <Compile Include="Assets\Scripts\Color_Script\ColorPick.cs" />
-    <Compile Include="Assets\Scripts\ColorPick.cs" />
     <Compile Include="Assets\Scripts\CreateRoom.cs" />
     <Compile Include="Assets\Scripts\CreationMeuble.cs" />
     <Compile Include="Assets\Scripts\MouseDrag.cs" />
