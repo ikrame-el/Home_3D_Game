@@ -80,6 +80,7 @@ public class CreateRoom : MonoBehaviour
         for (int j = 0; j < tabMur.Length; j++)
         {
             tabMur[j] = Resources.Load("Rooms/mur" + (j + 1)) as GameObject;
+            tabMur[j].AddComponent<MouseDrag>();
         }
 
         //creation des mur interieur de la piece
@@ -93,8 +94,11 @@ public class CreateRoom : MonoBehaviour
         CreationMur(tabMur[7], out mur8_, "mur8", new Vector3(mur4_.transform.localPosition.x + .2f, 3, 0), mur2_.transform.localScale);
 
         room.tag = mur1_.tag;
+        room.AddComponent<BoxCollider>();
+
         i++;
         TextFin();
+        
     }
 
     public void OnClick_Create_Room()
@@ -132,19 +136,19 @@ public class CreateRoom : MonoBehaviour
                 {
                     if(Input.GetKeyDown(KeyCode.LeftArrow))
                     {
-                        ObjectSelected.currentObject.transform.parent.position += new Vector3(-.5f, 0, 0);
+                        ObjectSelected.currentObject.transform.position += new Vector3(-.5f, 0, 0);
                     }
                     if (Input.GetKeyDown(KeyCode.RightArrow))
                     {
-                        ObjectSelected.currentObject.transform.parent.position += new Vector3(.5f, 0, 0);
+                        ObjectSelected.currentObject.transform.position += new Vector3(.5f, 0, 0);
                     }
                     if (Input.GetKeyDown(KeyCode.UpArrow))
                     {
-                        ObjectSelected.currentObject.transform.parent.position += new Vector3(0, 0, .5f);
+                        ObjectSelected.currentObject.transform.position += new Vector3(0, 0, .5f);
                     }
                     if (Input.GetKeyDown(KeyCode.DownArrow))
                     {
-                        ObjectSelected.currentObject.transform.parent.position += new Vector3(0, 0, -.5f);
+                        ObjectSelected.currentObject.transform.position += new Vector3(0, 0, -.5f);
                     }
                 }
             }

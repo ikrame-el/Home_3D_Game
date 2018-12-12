@@ -12,6 +12,9 @@ public class ObjectSelected : MonoBehaviour
     public Button[] tabButton = new Button[8];
     Material[] tabMaterials;
 
+    static int a = 0;
+
+    GameObject temp = null;
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -23,23 +26,32 @@ public class ObjectSelected : MonoBehaviour
                 if (hit.collider.gameObject.tag != "unselectable")
                 {
                     currentObject = hit.collider.gameObject;
-                    Debug.Log("currentObject.name: " + currentObject.name + " --  currentObject.tag : " + currentObject.tag);
-                    if (currentObject.tag == "Room")
+                    if (currentObject.tag == "room")
                     {
-                        currentObject = CreateRoom.room.gameObject;
-                        // Debug.Log("currentObject : " + currentObject.name);
+                        currentObject = currentObject.transform.parent.gameObject;
                     }
 
                     if (currentObject.name.Substring(0, 4) != "room")
                     {
-                        tabMaterials = currentObject.GetComponent<MeshRenderer>().materials;
-                        for (int i = 0; i < tabMaterials.Length; i++)
-                        {
-                            //Debug.Log("Material : " + tabMaterials[i].name);
-                            //tabButton[i].color = tabMaterials[i].color;
-                            tabButton[i].GetComponent<Image>().color = tabMaterials[i].color;
-                        }
                     }
+
+                    tabMaterials = currentObject.GetComponent<MeshRenderer>().materials;
+
+                    for (int i = 0; i < tabMaterials.Length; i++)
+                    {
+                        //Debug.Log("Material : " + tabMaterials[i].name);
+                        //tabButton[i].color = tabMaterials[i].color;
+                        tabButton[i].GetComponent<Image>().color = tabMaterials[i].color;
+                    }
+
+                    for (int i = tabMaterials.Length-1 ; i < tabButton.Length; i++)
+                    {
+                        tabButton[i].GetComponent<Image>().color = Color.white;
+                    }
+
+                    Debug.Log("currentObject.name: " + currentObject.name + " --  currentObject.tag : " + currentObject.tag);
+                    temp = currentObject;
+                    a++;
                 }
             }
         }
@@ -61,6 +73,11 @@ public class ObjectSelected : MonoBehaviour
             }
             Utils_.Active_Desactive_2(panelMenuColor, textColor.gameObject, false);
         }
+
+        //if (Input.GetMouseButtonDown(1))
+        //{
+        //    currentObject = null;
+        //}
 
     }
 }

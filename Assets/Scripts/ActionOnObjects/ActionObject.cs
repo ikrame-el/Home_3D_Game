@@ -101,6 +101,8 @@ public class ActionObject : MonoBehaviour
         transform.Rotate(Vector3.up * 10, Space.Self);
     }
 
+    public GameObject camFPS;
+
     private void Update()
     {
         //liste de tous les gameobjects qui on le composant ActionObject
@@ -108,7 +110,7 @@ public class ActionObject : MonoBehaviour
         if (isPressed)
         {
             //deplacement d'un meuble dans la scene
-            if (ObjectSelected.currentObject.tag != "room" && ObjectSelected.currentObject != null)
+            if (ObjectSelected.currentObject.tag != "room" && ObjectSelected.currentObject != null && Change_3D_2D.camFPSActive == false)
             {
                 if (Input.GetKeyDown(KeyCode.LeftArrow))
                 {
