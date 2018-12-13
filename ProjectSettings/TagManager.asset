@@ -15,6 +15,15 @@ TagManager:
   - unselectable
   - btn
   - room
+  - mur1
+  - mur2
+  - mur3
+  - mur4
+  - mur5
+  - mur6
+  - mur7
+  - mur8
+  - sol
   layers:
   - Default
   - TransparentFX

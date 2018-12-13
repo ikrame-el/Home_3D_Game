@@ -80,21 +80,21 @@ public class CreateRoom : MonoBehaviour
         for (int j = 0; j < tabMur.Length; j++)
         {
             tabMur[j] = Resources.Load("Rooms/mur" + (j + 1)) as GameObject;
-            tabMur[j].AddComponent<MouseDrag>();
+            //tabMur[j].AddComponent<MouseDrag>();
         }
 
         //creation des mur interieur de la piece
-        CreationMur(tabMur[0], out mur1_, "mur1", new Vector3(0, 3, length / 2 + .1f), new Vector3(tabMur[0].transform.localScale.x * width, 10, 0.2f));
-        CreationMur(tabMur[1], out mur2_, "mur2", new Vector3(width / 2 + 0.1f, 3, 0), new Vector3(0.2f, 10, length + 0.4f));
-        CreationMur(tabMur[2], out mur3_, "mur3", new Vector3(0, 3, -length / 2 - .1f), mur1_.transform.localScale);
-        CreationMur(tabMur[3], out mur4_, "mur4", new Vector3(-width / 2 - .1f, 3, 0), mur2_.transform.localScale);
-        CreationMur(tabMur[4], out mur5_, "mur5", new Vector3(0, 3, mur1_.transform.localPosition.z + 0.2f), new Vector3(mur1_.transform.localScale.x + 0.4f, mur1_.transform.localScale.y, mur1_.transform.localScale.z));
-        CreationMur(tabMur[5], out mur6_, "mur6", new Vector3(width / 2 + 0.3f, 3, 0), new Vector3(mur2_.transform.localScale.x, mur1_.transform.localScale.y, mur2_.transform.localScale.z + 0.4f));
-        CreationMur(tabMur[6], out mur7_, "mur7", new Vector3(0, 3, mur3_.transform.localPosition.z - 0.2f), mur5_.transform.localScale);
-        CreationMur(tabMur[7], out mur8_, "mur8", new Vector3(mur4_.transform.localPosition.x + .2f, 3, 0), mur2_.transform.localScale);
+        CreationMur(tabMur[0], out mur1_, "mur1", new Vector3(0, 5, length / 2 + .1f), new Vector3(tabMur[0].transform.localScale.x * width, 10, 0.2f));
+        CreationMur(tabMur[1], out mur2_, "mur2", new Vector3(width / 2 + 0.1f, 5, 0), new Vector3(0.2f, 10, length + 0.4f));
+        CreationMur(tabMur[2], out mur3_, "mur3", new Vector3(0, 5, -length / 2 - .1f), mur1_.transform.localScale);
+        CreationMur(tabMur[3], out mur4_, "mur4", new Vector3(-width / 2 - .1f, 5, 0), mur2_.transform.localScale);
+        CreationMur(tabMur[4], out mur5_, "mur5", new Vector3(0, 5, mur1_.transform.localPosition.z + 0.2f), new Vector3(mur1_.transform.localScale.x + 0.4f, mur1_.transform.localScale.y, mur1_.transform.localScale.z));
+        CreationMur(tabMur[5], out mur6_, "mur6", new Vector3(width / 2 + 0.3f, 5, 0), new Vector3(mur2_.transform.localScale.x, mur1_.transform.localScale.y, mur2_.transform.localScale.z + 0.4f));
+        CreationMur(tabMur[6], out mur7_, "mur7", new Vector3(0, 5, mur3_.transform.localPosition.z - 0.2f), mur5_.transform.localScale);
+        CreationMur(tabMur[7], out mur8_, "mur8", new Vector3(mur4_.transform.localPosition.x + .2f, 5, 0), mur2_.transform.localScale);
 
-        room.tag = mur1_.tag;
-        room.AddComponent<BoxCollider>();
+        room.tag ="room";
+        //room.AddComponent<BoxCollider>();
 
         i++;
         TextFin();
@@ -132,7 +132,7 @@ public class CreateRoom : MonoBehaviour
             //Deplacement d'une piece
             if (ObjectSelected.currentObject != null)
             {
-                if (ObjectSelected.currentObject.tag == "room")
+                if (ObjectSelected.currentObject.tag == "room" && !Change_3D_2D.camFPSActive)
                 {
                     if(Input.GetKeyDown(KeyCode.LeftArrow))
                     {

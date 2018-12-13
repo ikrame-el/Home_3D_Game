@@ -30,7 +30,7 @@ public class ActionObject : MonoBehaviour
         canevas_transform = GameObject.FindGameObjectWithTag("canevas").transform;
     }
 
-    void createButton()
+    public void createButton()
     {
         //menu cadre
         menu_ac = Resources.Load("Button_Actions/menu_ac") as GameObject;
@@ -91,14 +91,15 @@ public class ActionObject : MonoBehaviour
     public void DeleteObject()
     {
         Utils_.Active_Desactive_4(b_delete_, b_rotate_, b_texture_, menu_ac_, false);
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        Destroy(ObjectSelected.currentObject);
         active = false;
     }
 
 
     public void RotationObject()
     {
-        transform.Rotate(Vector3.up * 10, Space.Self);
+        transform.Rotate(Vector3.up * 45, Space.Self);
     }
 
     public GameObject camFPS;

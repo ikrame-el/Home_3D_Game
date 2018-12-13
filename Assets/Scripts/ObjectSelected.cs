@@ -26,27 +26,28 @@ public class ObjectSelected : MonoBehaviour
                 if (hit.collider.gameObject.tag != "unselectable")
                 {
                     currentObject = hit.collider.gameObject;
-                    if (currentObject.tag == "room")
+                    tabMaterials = currentObject.GetComponent<MeshRenderer>().materials;
+                    if (currentObject.tag == "sol" || ObjectSelected.currentObject.tag == "mur1" || ObjectSelected.currentObject.tag == "mur2" || ObjectSelected.currentObject.tag == "mur3" || ObjectSelected.currentObject.tag == "mur4" || ObjectSelected.currentObject.tag == "mur5" || ObjectSelected.currentObject.tag == "mur6" || ObjectSelected.currentObject.tag == "mur7" || ObjectSelected.currentObject.tag == "mur8")
                     {
                         currentObject = currentObject.transform.parent.gameObject;
                     }
-
-                    if (currentObject.name.Substring(0, 4) != "room")
+                    else
                     {
-                    }
+                        //tabMaterials = currentObject.GetComponent<MeshRenderer>().materials;
 
-                    tabMaterials = currentObject.GetComponent<MeshRenderer>().materials;
+                        for (int i = 0; i < tabMaterials.Length; i++)
+                        {
+                            //Debug.Log("Material : " + tabMaterials[i].name);
+                            //tabButton[i].color = tabMaterials[i].color;
+                            tabButton[i].interactable = true;
+                            tabButton[i].GetComponent<Image>().color = tabMaterials[i].color;
+                        }
 
-                    for (int i = 0; i < tabMaterials.Length; i++)
-                    {
-                        //Debug.Log("Material : " + tabMaterials[i].name);
-                        //tabButton[i].color = tabMaterials[i].color;
-                        tabButton[i].GetComponent<Image>().color = tabMaterials[i].color;
-                    }
-
-                    for (int i = tabMaterials.Length-1 ; i < tabButton.Length; i++)
-                    {
-                        tabButton[i].GetComponent<Image>().color = Color.white;
+                        for (int i = tabMaterials.Length; i < tabButton.Length; i++)
+                        {
+                            tabButton[i].GetComponent<Image>().color = Color.white;
+                            tabButton[i].interactable = false;
+                        }
                     }
 
                     Debug.Log("currentObject.name: " + currentObject.name + " --  currentObject.tag : " + currentObject.tag);
