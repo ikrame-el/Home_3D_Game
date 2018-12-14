@@ -99,7 +99,17 @@ public class ActionObject : MonoBehaviour
 
     public void RotationObject()
     {
-        transform.Rotate(Vector3.up * 45, Space.Self);
+        if (ObjectSelected.currentObject.tag == "sol" || ObjectSelected.currentObject.tag == "mur1" || ObjectSelected.currentObject.tag == "mur2" || ObjectSelected.currentObject.tag == "mur3" || ObjectSelected.currentObject.tag == "mur4" || ObjectSelected.currentObject.tag == "mur5" || ObjectSelected.currentObject.tag == "mur6" || ObjectSelected.currentObject.tag == "mur7" || ObjectSelected.currentObject.tag == "mur8")
+        {
+            ObjectSelected.currentObject.transform.parent.Rotate(Vector3.up * 45, Space.Self);
+            Debug.Log("room----");
+        }
+        else
+        {
+            ObjectSelected.currentObject.transform.Rotate(Vector3.up * 45, Space.Self);
+            Debug.Log("pas room----");
+
+        }
     }
 
     public GameObject camFPS;
@@ -130,7 +140,6 @@ public class ActionObject : MonoBehaviour
                     this.transform.position += new Vector3(0, 0, -.5f);
                 }
             }
-
             if (Input.GetMouseButtonDown(1) && b_delete_ != null && b_rotate_ != null && b_texture_ != null && menu_ac_ != null)
             {
                 Utils_.Active_Desactive_4(b_delete_, b_rotate_, b_texture_, menu_ac_, false);
@@ -139,4 +148,6 @@ public class ActionObject : MonoBehaviour
         }
 
     }
+
+
 }

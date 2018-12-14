@@ -1,14 +1,15 @@
 fileFormatVersion: 2
-guid: 6d79731b67615ef4087c0fe1879451db
+guid: af4aa9be627769048bac76771fbc5fc3
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: MatTable
+    2100000: MatBois
+    2100002: MatChaise.002
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube
+    4300000: Cube.002
   externalObjects: {}
   materials:
     importMaterials: 1

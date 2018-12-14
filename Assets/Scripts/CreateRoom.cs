@@ -93,12 +93,21 @@ public class CreateRoom : MonoBehaviour
         CreationMur(tabMur[6], out mur7_, "mur7", new Vector3(0, 5, mur3_.transform.localPosition.z - 0.2f), mur5_.transform.localScale);
         CreationMur(tabMur[7], out mur8_, "mur8", new Vector3(mur4_.transform.localPosition.x + .2f, 5, 0), mur2_.transform.localScale);
 
-        room.tag ="room";
+        room.tag = "room";
         //room.AddComponent<BoxCollider>();
 
         i++;
         TextFin();
-        
+
+        mur1_.AddComponent<ActionObject>();
+        mur2_.AddComponent<ActionObject>();
+        mur3_.AddComponent<ActionObject>();
+        mur4_.AddComponent<ActionObject>();
+        mur5_.AddComponent<ActionObject>();
+        mur6_.AddComponent<ActionObject>();
+        mur7_.AddComponent<ActionObject>();
+        mur8_.AddComponent<ActionObject>();
+        sol_.AddComponent<ActionObject>();
     }
 
     public void OnClick_Create_Room()
@@ -134,7 +143,7 @@ public class CreateRoom : MonoBehaviour
             {
                 if (ObjectSelected.currentObject.tag == "room" && !Change_3D_2D.camFPSActive)
                 {
-                    if(Input.GetKeyDown(KeyCode.LeftArrow))
+                    if (Input.GetKeyDown(KeyCode.LeftArrow))
                     {
                         ObjectSelected.currentObject.transform.position += new Vector3(-.5f, 0, 0);
                     }

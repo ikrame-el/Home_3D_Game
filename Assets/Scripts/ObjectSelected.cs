@@ -15,6 +15,10 @@ public class ObjectSelected : MonoBehaviour
     static int a = 0;
 
     GameObject temp = null;
+
+    public static GameObject partieRoom;
+
+    // public static GameObject[] tabCurrentObjectRoom;
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -26,14 +30,34 @@ public class ObjectSelected : MonoBehaviour
                 if (hit.collider.gameObject.tag != "unselectable")
                 {
                     currentObject = hit.collider.gameObject;
-                    tabMaterials = currentObject.GetComponent<MeshRenderer>().materials;
+                    partieRoom = currentObject;
+
                     if (currentObject.tag == "sol" || ObjectSelected.currentObject.tag == "mur1" || ObjectSelected.currentObject.tag == "mur2" || ObjectSelected.currentObject.tag == "mur3" || ObjectSelected.currentObject.tag == "mur4" || ObjectSelected.currentObject.tag == "mur5" || ObjectSelected.currentObject.tag == "mur6" || ObjectSelected.currentObject.tag == "mur7" || ObjectSelected.currentObject.tag == "mur8")
                     {
                         currentObject = currentObject.transform.parent.gameObject;
+                        Material[] tableMat = new Material[currentObject.transform.childCount];
+                        for (int i = 0; i < currentObject.transform.childCount; i++)
+                        {
+                            tableMat[i] = currentObject.transform.GetChild(i).GetComponent<MeshRenderer>().materials[0];
+                        }
+                        tabMaterials = tableMat;
+                        for (int i = 0; i < tabMaterials.Length; i++)
+                        {
+                            tabButton[i].interactable = true;
+                            tabButton[i].GetComponent<Image>().color = tabMaterials[i].color;
+
+                        }
+                        for (int i = tabMaterials.Length; i < tabButton.Length; i++)
+                        {
+                            tabButton[i].GetComponent<Image>().color = Color.white;
+                            tabButton[i].interactable = false;
+                        }
                     }
                     else
                     {
-                        //tabMaterials = currentObject.GetComponent<MeshRenderer>().materials;
+                        tabMaterials = currentObject.GetComponent<MeshRenderer>().materials;
+                        //tabMaterials = partieRoom.GetComponent<MeshRenderer>().materials;
+
 
                         for (int i = 0; i < tabMaterials.Length; i++)
                         {
@@ -49,14 +73,12 @@ public class ObjectSelected : MonoBehaviour
                             tabButton[i].interactable = false;
                         }
                     }
-
                     Debug.Log("currentObject.name: " + currentObject.name + " --  currentObject.tag : " + currentObject.tag);
                     temp = currentObject;
                     a++;
                 }
             }
         }
-
 
         if (ActionObject.active)
         {
@@ -74,11 +96,7 @@ public class ObjectSelected : MonoBehaviour
             }
             Utils_.Active_Desactive_2(panelMenuColor, textColor.gameObject, false);
         }
-
-        //if (Input.GetMouseButtonDown(1))
-        //{
-        //    currentObject = null;
-        //}
-
     }
+
+
 }

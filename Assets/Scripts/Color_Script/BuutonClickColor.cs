@@ -48,4 +48,24 @@ public class BuutonClickColor : MonoBehaviour
     {
         numButton = 7;
     }
+
+    public void Num_Button_Preesed_9()
+    {
+        numButton = 8;
+    }
+
+    public void Num_Button_Preesed_10()
+    {
+        numButton = 9;
+    }
+
+    public void Num_Button_Preesed_11()
+    {
+        numButton = 10;
+    }
+
+    public void Num_Button_Preesed_12()
+    {
+        numButton = 11;
+    }
 }

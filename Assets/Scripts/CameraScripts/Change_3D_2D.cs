@@ -18,7 +18,6 @@ public class Change_3D_2D : MonoBehaviour
     public GameObject b3;
     public GameObject b4;
 
-    static int nb = 1;
     bool isPressed = false;
 
     public void ChangeCamera()

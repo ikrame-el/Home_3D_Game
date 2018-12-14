@@ -14,7 +14,7 @@ public class AfficherCatalogue : MonoBehaviour
     public GameObject bathRoom;
     public GameObject kitchen;
     public GameObject garden;
-    public GameObject electro;
+    public GameObject TableChaise;
     public GameObject door;
     public GameObject window;
 
@@ -26,7 +26,7 @@ public class AfficherCatalogue : MonoBehaviour
     public GameObject panelBathRoom;
     public GameObject panelKitchen;
     public GameObject panelGarden;
-    public GameObject panelElectro;
+    public GameObject panelTable_chaise;
     public GameObject panelDoor;
     public GameObject panelWindow;
 
@@ -41,12 +41,12 @@ public class AfficherCatalogue : MonoBehaviour
         isPressed = !isPressed;
         if (isPressed)
         {
-            Utils_.Active_Desactive_9(bedRoom, livingRoom, bathRoom, kitchen, garden, electro, door, window,menu_furniture, true);
+            Utils_.Active_Desactive_9(bedRoom, livingRoom, bathRoom, kitchen, garden, TableChaise, door, window,menu_furniture, true);
         }
         else
         {
-            Utils_.Active_Desactive_9(bedRoom, livingRoom, bathRoom, kitchen, garden, electro, door, window, menu_furniture, false);
-            Utils_.Active_Desactive_9(panelWindow, panelBathRoom, panelKitchen, panelLivingRoom, panelDoor, panelElectro, panelGarden, panelBedRoom, panelFurniture, false);
+            Utils_.Active_Desactive_9(bedRoom, livingRoom, bathRoom, kitchen, garden, TableChaise, door, window, menu_furniture, false);
+            Utils_.Active_Desactive_9(panelWindow, panelBathRoom, panelKitchen, panelLivingRoom, panelDoor, panelTable_chaise, panelGarden, panelBedRoom, panelFurniture, false);
         }
     }
 
@@ -70,11 +70,11 @@ public class AfficherCatalogue : MonoBehaviour
     {
         button_pressed = panelGarden.name;
     }
-    public void Electro_down()
+    public void Table_Chair_down()
     {
-        button_pressed = panelElectro.name;
+        button_pressed = panelTable_chaise.name;
     }
-    public void Window_down()
+    public void Storage_down()
     {
         button_pressed = panelWindow.name;
     }
@@ -93,34 +93,34 @@ public class AfficherCatalogue : MonoBehaviour
             {
                 case "bedroom_sprites":
                     Utils_.Active_Desactive_2(panelBedRoom, panelFurniture, true);
-                    Utils_.Active_Desactive_7(panelBathRoom, panelKitchen, panelLivingRoom, panelDoor, panelElectro, panelGarden, panelWindow, false);
+                    Utils_.Active_Desactive_7(panelBathRoom, panelKitchen, panelLivingRoom, panelDoor, panelTable_chaise, panelGarden, panelWindow, false);
                     break;
                 case "bathroom_sprites":
                     Utils_.Active_Desactive_2(panelBathRoom, panelFurniture, true);
-                    Utils_.Active_Desactive_7(panelBedRoom, panelKitchen, panelLivingRoom, panelDoor, panelElectro, panelGarden, panelWindow, false);
+                    Utils_.Active_Desactive_7(panelBedRoom, panelKitchen, panelLivingRoom, panelDoor, panelTable_chaise, panelGarden, panelWindow, false);
                     break;
                 case "livingroom_sprites":
                     Utils_.Active_Desactive_2(panelLivingRoom, panelFurniture, true);
-                    Utils_.Active_Desactive_7(panelBathRoom, panelKitchen, panelBedRoom, panelDoor, panelElectro, panelGarden, panelWindow, false);
+                    Utils_.Active_Desactive_7(panelBathRoom, panelKitchen, panelBedRoom, panelDoor, panelTable_chaise, panelGarden, panelWindow, false);
                     break;
                 case "kitchen_sprites":
                     Utils_.Active_Desactive_2(panelKitchen, panelFurniture, true);
-                    Utils_.Active_Desactive_7(panelBathRoom, panelBedRoom, panelLivingRoom, panelDoor, panelElectro, panelGarden, panelWindow, false);
+                    Utils_.Active_Desactive_7(panelBathRoom, panelBedRoom, panelLivingRoom, panelDoor, panelTable_chaise, panelGarden, panelWindow, false);
                     break;
                 case "garden_sprites":
                     Utils_.Active_Desactive_2(panelGarden, panelFurniture, true);
-                    Utils_.Active_Desactive_7(panelBathRoom, panelKitchen, panelLivingRoom, panelDoor, panelElectro, panelBedRoom, panelWindow, false);
+                    Utils_.Active_Desactive_7(panelBathRoom, panelKitchen, panelLivingRoom, panelDoor, panelTable_chaise, panelBedRoom, panelWindow, false);
                     break;
-                case "window_sprites":
+                case "storage_sprites":
                     Utils_.Active_Desactive_2(panelWindow, panelFurniture, true);
-                    Utils_.Active_Desactive_7(panelBathRoom, panelKitchen, panelLivingRoom, panelDoor, panelElectro, panelGarden, panelBedRoom, false);
+                    Utils_.Active_Desactive_7(panelBathRoom, panelKitchen, panelLivingRoom, panelDoor, panelTable_chaise, panelGarden, panelBedRoom, false);
                     break;
                 case "door_sprites":
                     Utils_.Active_Desactive_2(panelDoor, panelFurniture, true);
-                    Utils_.Active_Desactive_7(panelBathRoom, panelKitchen, panelLivingRoom, panelBedRoom, panelElectro, panelGarden, panelWindow, false);
+                    Utils_.Active_Desactive_7(panelBathRoom, panelKitchen, panelLivingRoom, panelBedRoom, panelTable_chaise, panelGarden, panelWindow, false);
                     break;
-                case "electro_sprites":
-                    Utils_.Active_Desactive_2(panelElectro, panelFurniture, true);
+                case "table_chair_sprites":
+                    Utils_.Active_Desactive_2(panelTable_chaise, panelFurniture, true);
                     Utils_.Active_Desactive_7(panelBathRoom, panelKitchen, panelLivingRoom, panelDoor, panelBedRoom, panelGarden, panelWindow, false);
                     break;
             }

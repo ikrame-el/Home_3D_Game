@@ -18,6 +18,7 @@ public class ChangeScaleMur : MonoBehaviour
         posX = this.transform.position.x;
         posY = this.transform.position.y;
         posZ = this.transform.position.z;
+
     }
 
     float length;
@@ -27,14 +28,14 @@ public class ChangeScaleMur : MonoBehaviour
 
     void Update()
     {
-        length = float.Parse(t1.text);
-        width = float.Parse(t2.text);
+        if (t1.text != "" && t2.text != "")
+        {
+            length = float.Parse(t1.text);
+            width = float.Parse(t2.text);
+        }
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
-
-
-
             if (this.GetComponentInChildren<GameObject>().name == "mur_1")
             {
                 mur1 = GetComponentsInChildren<GameObject>()[0];
@@ -56,11 +57,11 @@ public class ChangeScaleMur : MonoBehaviour
                 sol = GetComponentsInChildren<GameObject>()[4];
             }
 
-            mur1.transform.localScale = new Vector3(length, 1, 1);
-            mur2.transform.localScale = new Vector3(1, 1, width);
-            mur3.transform.localScale = new Vector3(length, 1, 1);
-            mur4.transform.localScale = new Vector3(1, 1, width);
-            sol.transform.localScale = new Vector3(length,1, width);
+            mur1.transform.localScale = new Vector3(width, 1, 1);
+            mur2.transform.localScale = new Vector3(1, 1, length);
+            mur3.transform.localScale = new Vector3(width, 1, 1);
+            mur4.transform.localScale = new Vector3(1, 1, length);
+            sol.transform.localScale = new Vector3(width, 1, length);
 
 
             mur1.transform.transform.position = new Vector3(posX, posY, posZ * width);
