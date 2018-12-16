@@ -16,14 +16,10 @@ public class CreateRoom : MonoBehaviour
     public Text text1;
     public Text text2;
 
-
-
-
     float width;
     float length;
 
     GameObject sol;
-
     GameObject mur1_;
     GameObject mur2_;
     GameObject mur3_;
@@ -94,7 +90,7 @@ public class CreateRoom : MonoBehaviour
         CreationMur(tabMur[7], out mur8_, "mur8", new Vector3(mur4_.transform.localPosition.x + .2f, 5, 0), mur2_.transform.localScale);
 
         room.tag = "room";
-        //room.AddComponent<BoxCollider>();
+
 
         i++;
         TextFin();
@@ -108,6 +104,8 @@ public class CreateRoom : MonoBehaviour
         mur7_.AddComponent<ActionObject>();
         mur8_.AddComponent<ActionObject>();
         sol_.AddComponent<ActionObject>();
+
+        room.AddComponent<BoxCollider>().size = new Vector3(0, 10, 0);
     }
 
     public void OnClick_Create_Room()
@@ -137,31 +135,6 @@ public class CreateRoom : MonoBehaviour
                 Create_Room();
                 Utils_.Active_Desactive_5(input1.gameObject, input2.gameObject, menu.gameObject, text1.gameObject, text2.gameObject, false);
             }
-
-            //Deplacement d'une piece
-            if (ObjectSelected.currentObject != null)
-            {
-                if (ObjectSelected.currentObject.tag == "room" && !Change_3D_2D.camFPSActive)
-                {
-                    if (Input.GetKeyDown(KeyCode.LeftArrow))
-                    {
-                        ObjectSelected.currentObject.transform.position += new Vector3(-.5f, 0, 0);
-                    }
-                    if (Input.GetKeyDown(KeyCode.RightArrow))
-                    {
-                        ObjectSelected.currentObject.transform.position += new Vector3(.5f, 0, 0);
-                    }
-                    if (Input.GetKeyDown(KeyCode.UpArrow))
-                    {
-                        ObjectSelected.currentObject.transform.position += new Vector3(0, 0, .5f);
-                    }
-                    if (Input.GetKeyDown(KeyCode.DownArrow))
-                    {
-                        ObjectSelected.currentObject.transform.position += new Vector3(0, 0, -.5f);
-                    }
-                }
-            }
         }
-
     }
 }

@@ -61,7 +61,7 @@ public class ColorManager : MonoBehaviour
         }
     }
 
-    GameObject[] btnTabTag;
+    GameObject[] btnTabTag = new GameObject[90];
 
     public void ColorManager_Avec_Bouton()
     {

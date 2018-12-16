@@ -91,8 +91,16 @@ public class ActionObject : MonoBehaviour
     public void DeleteObject()
     {
         Utils_.Active_Desactive_4(b_delete_, b_rotate_, b_texture_, menu_ac_, false);
-        //Destroy(gameObject);
-        Destroy(ObjectSelected.currentObject);
+        //Destroy(ObjectSelected.currentObject);
+
+        if (ObjectSelected.currentObject.tag == "sol" || ObjectSelected.currentObject.tag == "mur1" || ObjectSelected.currentObject.tag == "mur2" || ObjectSelected.currentObject.tag == "mur3" || ObjectSelected.currentObject.tag == "mur4" || ObjectSelected.currentObject.tag == "mur5" || ObjectSelected.currentObject.tag == "mur6" || ObjectSelected.currentObject.tag == "mur7" || ObjectSelected.currentObject.tag == "mur8")
+        {
+            Destroy(ObjectSelected.currentObject.transform.parent.gameObject);
+        }
+        else
+        {
+            Destroy(ObjectSelected.currentObject.transform.gameObject);
+        }
         active = false;
     }
 
@@ -102,13 +110,10 @@ public class ActionObject : MonoBehaviour
         if (ObjectSelected.currentObject.tag == "sol" || ObjectSelected.currentObject.tag == "mur1" || ObjectSelected.currentObject.tag == "mur2" || ObjectSelected.currentObject.tag == "mur3" || ObjectSelected.currentObject.tag == "mur4" || ObjectSelected.currentObject.tag == "mur5" || ObjectSelected.currentObject.tag == "mur6" || ObjectSelected.currentObject.tag == "mur7" || ObjectSelected.currentObject.tag == "mur8")
         {
             ObjectSelected.currentObject.transform.parent.Rotate(Vector3.up * 45, Space.Self);
-            Debug.Log("room----");
         }
         else
         {
             ObjectSelected.currentObject.transform.Rotate(Vector3.up * 45, Space.Self);
-            Debug.Log("pas room----");
-
         }
     }
 
@@ -118,10 +123,10 @@ public class ActionObject : MonoBehaviour
     {
         //liste de tous les gameobjects qui on le composant ActionObject
         //GameObject.FindObjectsOfType<ActionObject>();
-        if (isPressed)
+        if (isPressed && !Change_3D_2D.camFPSActive)
         {
             //deplacement d'un meuble dans la scene
-            if (ObjectSelected.currentObject.tag != "room" && ObjectSelected.currentObject != null && Change_3D_2D.camFPSActive == false)
+            if (ObjectSelected.currentObject.tag != "sol" && ObjectSelected.currentObject.tag != "mur1" && ObjectSelected.currentObject.tag != "mur2" && ObjectSelected.currentObject.tag != "mur3" && ObjectSelected.currentObject.tag != "mur4" && ObjectSelected.currentObject.tag != "mur5" && ObjectSelected.currentObject.tag != "mur6" && ObjectSelected.currentObject.tag != "mur7" && ObjectSelected.currentObject.tag != "mur8" && ObjectSelected.currentObject != null && Change_3D_2D.camFPSActive == false)
             {
                 if (Input.GetKeyDown(KeyCode.LeftArrow))
                 {
@@ -140,14 +145,34 @@ public class ActionObject : MonoBehaviour
                     this.transform.position += new Vector3(0, 0, -.5f);
                 }
             }
-            if (Input.GetMouseButtonDown(1) && b_delete_ != null && b_rotate_ != null && b_texture_ != null && menu_ac_ != null)
+            else
             {
-                Utils_.Active_Desactive_4(b_delete_, b_rotate_, b_texture_, menu_ac_, false);
-                active = false;
+                if (Input.GetKeyDown(KeyCode.LeftArrow))
+                {
+                    ObjectSelected.currentObject.transform.parent.position += new Vector3(-.5f, 0, 0);
+                }
+                if (Input.GetKeyDown(KeyCode.RightArrow))
+                {
+                    ObjectSelected.currentObject.transform.parent.position += new Vector3(.5f, 0, 0);
+                }
+                if (Input.GetKeyDown(KeyCode.UpArrow))
+                {
+                    ObjectSelected.currentObject.transform.parent.position += new Vector3(0, 0, .5f);
+                }
+                if (Input.GetKeyDown(KeyCode.DownArrow))
+                {
+                    ObjectSelected.currentObject.transform.parent.position += new Vector3(0, 0, -.5f);
+                }
+
             }
         }
-
+        if (Input.GetMouseButtonDown(1) && b_delete_ != null && b_rotate_ != null && b_texture_ != null && menu_ac_ != null)
+        {
+            Utils_.Active_Desactive_4(b_delete_, b_rotate_, b_texture_, menu_ac_, false);
+            active = false;
+        }
     }
 
-
 }
+
+
