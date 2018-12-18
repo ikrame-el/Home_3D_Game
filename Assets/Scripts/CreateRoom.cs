@@ -12,6 +12,8 @@ public class CreateRoom : MonoBehaviour
 
     public InputField input1;
     public InputField input2;
+
+
     public Image menu;
     public Text text1;
     public Text text2;
@@ -135,6 +137,11 @@ public class CreateRoom : MonoBehaviour
                 Create_Room();
                 Utils_.Active_Desactive_5(input1.gameObject, input2.gameObject, menu.gameObject, text1.gameObject, text2.gameObject, false);
             }
+
+        }
+        if (Input.GetMouseButtonDown(1) && isPressed)
+        {
+            OnClick_Create_Room();
         }
     }
 }
