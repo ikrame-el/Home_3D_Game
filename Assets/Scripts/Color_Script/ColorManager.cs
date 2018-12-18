@@ -122,7 +122,11 @@ public class ColorManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
+            if (panelColorPalette.active==true)
+            {
             ActiverPaletteCouleur(false);
+
+            }
         }
     }
 

@@ -124,7 +124,13 @@ public class AfficherCatalogue : MonoBehaviour
                     Utils_.Active_Desactive_7(panelBathRoom, panelKitchen, panelLivingRoom, panelDoor, panelBedRoom, panelGarden, panelWindow, false);
                     break;
             }
-           
+
+            if (Input.GetMouseButtonDown(1))
+            {
+                button_pressed = null;
+                Utils_.Active_Desactive_9(panelBathRoom, panelKitchen, panelLivingRoom, panelDoor, panelBedRoom, panelGarden, panelWindow, panelTable_chaise, panelFurniture, false);
+                Utils_.Active_Desactive_9(bedRoom, livingRoom, bathRoom, kitchen, garden, TableChaise, door, window, menu_furniture, false);
+            }
         }
     }
 }
