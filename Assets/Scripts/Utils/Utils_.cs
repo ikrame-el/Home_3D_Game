@@ -44,4 +44,10 @@ public class Utils_ : MonoBehaviour {
         game9.SetActive(boool);
     }
 
+    public static void Active_Desactive_11(GameObject game1, GameObject game2, GameObject game3, GameObject game4, GameObject game5, GameObject game6, GameObject game7, GameObject game8, GameObject game9, GameObject game10, GameObject game11, bool boool)
+    {
+        Active_Desactive_9(game1, game2, game3, game4, game5, game6, game7, game8,game9, boool);
+        Active_Desactive_2(game10, game11, boool);
+    }
+
 }

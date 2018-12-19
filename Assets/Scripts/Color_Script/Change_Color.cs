@@ -15,7 +15,7 @@ public class Change_Color : MonoBehaviour, IPointerClickHandler
         string str = this.name.Substring(0);
         //Debug.Log("str : " + str + " -- str.length : " + str.Length);
         i = int.Parse(this.name);
-        current.GetComponent<MeshRenderer>().materials[numBtn].color = ColorManager.tabStockageMat[i].color;
+        current.GetComponent<Renderer>().materials[numBtn].color = ColorManager.tabStockageMat[i].color;
     }
 
     void Update()

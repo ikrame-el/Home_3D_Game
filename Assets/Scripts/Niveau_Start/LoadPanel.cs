@@ -22,7 +22,6 @@ public class LoadPanel : MonoBehaviour
 
     private void Start()
     {
-
         //desactiver tous les panels au demarrage et les boutons next et preview
         Activer_Desactiver_panels(start_button, instructions_button, next_button, preview_button, false);
     }
@@ -57,7 +56,6 @@ public class LoadPanel : MonoBehaviour
             panel_[cpt - 1].SetActive(true);
             cpt--;
         }
-
     }
 
     public void Instructions()
@@ -68,7 +66,6 @@ public class LoadPanel : MonoBehaviour
 
         currentPanel = cpt;
         cpt++;
-        Debug.Log("RUUULES");
     }
 
     public void Play()
@@ -79,26 +76,21 @@ public class LoadPanel : MonoBehaviour
     IEnumerator Attendre2sec()
     {
         next_button.interactable = false;
-        Debug.Log("COOOORROOUUUUtinee AVANT");
         yield return new WaitForSeconds(3.0f);
-        Debug.Log("COOOORROOUUUUtinee Apres");
         cpt = 0;
         panel_start.SetActive(true);
-        Activer_Desactiver_panels(start_button, instructions_button, next_button, preview_button, false);
         next_button.interactable = true;
+        Activer_Desactiver_panels(start_button, instructions_button, next_button, preview_button, false);
     }
 
     private void Update()
     {
         if (cpt == 0)
-        {
-            Utils_.Active_Desactive_2(start_button.gameObject, instructions_button.gameObject, true);
+        { 
+            Activer_Desactiver_panels(start_button, instructions_button, next_button, preview_button, false);
+            panel_start.SetActive(true);
         }
-        else
-        {
-            Utils_.Active_Desactive_2(start_button.gameObject, instructions_button.gameObject, false);
-        }
-        Debug.Log("CPT = " + cpt);
+
         if (cpt == 11)
         {
             StartCoroutine("Attendre2sec");
