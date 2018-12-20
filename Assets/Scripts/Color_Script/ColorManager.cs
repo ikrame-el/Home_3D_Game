@@ -10,6 +10,7 @@ public class ColorManager : MonoBehaviour
     public GameObject ImageColoPrefab;
     public Vector3 ImagePosition;
     public GameObject panelColorPalette;
+    public GameObject panelTextePalette;
 
     public GameObject[] tabImage;
     public Image[] tabStockageImage;
@@ -17,7 +18,7 @@ public class ColorManager : MonoBehaviour
     public static Material[] tabStockageMat = new Material[90];
 
     float posiXDefault = 98.4f;
-    float posiYDefault = 67.3f;
+    float posiYDefault = 45.1f;
 
     static int cpt = 0;
 
@@ -25,42 +26,6 @@ public class ColorManager : MonoBehaviour
     public GameObject buttonColorPrefab;
     public GameObject[] tabButton;
     public Button[] tabStockageButton;
-
-
-
-    public void ColorManager_()
-    {
-        tabImage = new GameObject[90];
-        tabStockageImage = new Image[tabImage.Length];
-
-        int i = 0;
-        int k = 0;
-        int m = 0;
-        if (cpt == 0)
-        {
-            while (k < 10)
-            {
-                m = 0;
-                while (m < 9)
-                {
-                    GameObject currentImage = Instantiate(ImageColoPrefab, canvas.transform) as GameObject;
-                    Image img = currentImage.GetComponent<Image>();
-                    img.name = "img-" + i;
-                    img.color = tabMat[i].color;
-                    RectTransform rectTransform = currentImage.GetComponent<RectTransform>();
-                    rectTransform.transform.localPosition = new Vector3(posiXDefault + (m * 18), posiYDefault - (k * 18), 0);
-
-                    tabStockageImage[i] = img;
-                    i++;
-                    m++;
-                }
-                k++;
-            }
-            panelColorPalette.SetActive(true);
-            cpt++;
-        }
-    }
-
     GameObject[] btnTabTag = new GameObject[90];
 
     public void ColorManager_Avec_Bouton()
@@ -97,24 +62,25 @@ public class ColorManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("Hello World");
             ActiverPaletteCouleur(true);
         }
         tabStockageMat = tabMat;
     }
 
-   
+
 
     static int cnt = 0;
     void ActiverPaletteCouleur(bool leBool)
     {
         cnt++;
-        
+
         panelColorPalette.SetActive(leBool);
 
         for (int i = 0; i < btnTabTag.Length; i++)
         {
             btnTabTag[i].SetActive(leBool);
-           // Debug.Log("bouton : " + btnTabTag[i]);
+            // Debug.Log("bouton : " + btnTabTag[i]);
         }
     }
 
@@ -122,11 +88,15 @@ public class ColorManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            if (panelColorPalette.active==true)
+            if (panelColorPalette.active == true )
             {
-            ActiverPaletteCouleur(false);
-
+                ActiverPaletteCouleur(false);
             }
+        }
+
+        if (ActionObject.active == false && panelColorPalette.active == true)
+        {
+            ActiverPaletteCouleur(false);
         }
     }
 

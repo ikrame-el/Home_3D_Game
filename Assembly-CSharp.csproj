@@ -62,11 +62,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ActionOnObjects\ActionObject.cs" />
+    <Compile Include="Assets\Scripts\ActionOnObjects\Color_Button.cs" />
     <Compile Include="Assets\Scripts\ActionOnObjects\ColorChoice.cs" />
     <Compile Include="Assets\Scripts\ActionOnObjects\Delete_Button.cs" />
     <Compile Include="Assets\Scripts\ActionOnObjects\MouseDrag.cs" />
     <Compile Include="Assets\Scripts\ActionOnObjects\ObjectSelected.cs" />
     <Compile Include="Assets\Scripts\ActionOnObjects\Rotation_button.cs" />
+    <Compile Include="Assets\Scripts\ActionOnObjects\Texture_button.cs" />
     <Compile Include="Assets\Scripts\AfficherCatalogue.cs" />
     <Compile Include="Assets\Scripts\CameraScripts\Change_3D_2D.cs" />
     <Compile Include="Assets\Scripts\CameraScripts\PositionCamera.cs" />
@@ -75,7 +77,6 @@
     <Compile Include="Assets\Scripts\Color_Script\BuutonClickColor.cs" />
     <Compile Include="Assets\Scripts\Color_Script\Change_Color.cs" />
     <Compile Include="Assets\Scripts\Color_Script\ColorManager.cs" />
-    <Compile Include="Assets\Scripts\Color_Script\ColorPick.cs" />
     <Compile Include="Assets\Scripts\CreateRoom.cs" />
     <Compile Include="Assets\Scripts\CreationMeuble.cs" />
     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />

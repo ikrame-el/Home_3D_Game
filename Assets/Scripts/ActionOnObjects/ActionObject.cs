@@ -12,18 +12,18 @@ public class ActionObject : MonoBehaviour
 
     GameObject b_delete;
     GameObject b_rotate;
-    //GameObject b_color;
+    GameObject b_color;
     GameObject b_texture;
     GameObject menu_ac;
 
     static GameObject b_delete_;
     static GameObject b_rotate_;
-    //static GameObject b_color_;
+    static GameObject b_color_;
     static GameObject b_texture_;
     static GameObject menu_ac_;
 
     public static bool active;
-
+    public static bool activeTexture;
 
     private void Start()
     {
@@ -45,8 +45,8 @@ public class ActionObject : MonoBehaviour
         b_rotate_ = Instantiate(b_rotate, canevas_transform);
 
         //color bouton
-        //b_color = Resources.Load("Button_Actions/Button_color") as GameObject;
-        //b_color_ = Instantiate(b_color, canevas_transform);
+        b_color = Resources.Load("Button_Actions/Button_color") as GameObject;
+        b_color_ = Instantiate(b_color, canevas_transform);
 
         //texture bouton
         b_texture = Resources.Load("Button_Actions/Button_texture") as GameObject;
@@ -57,7 +57,7 @@ public class ActionObject : MonoBehaviour
 
     void OnMouseDown()
     {
-        active = true;
+        
         //Ici on deselectionne tous les autres objets qui ont le script ActionObject
         ActionObject[] objects = GameObject.FindObjectsOfType<ActionObject>();
 
@@ -69,28 +69,40 @@ public class ActionObject : MonoBehaviour
             }
         }
 
-        if (b_delete_ == null && b_rotate_ == null && b_texture_ == null && menu_ac_ == null)
+        if (b_delete_ == null && b_rotate_ == null && b_texture_ == null && b_color_ == null && menu_ac_ == null)
         {
             createButton();
         }
 
-        Utils_.Active_Desactive_4(b_delete_, b_rotate_, b_texture_, menu_ac_, true);
-
-        b_delete_.GetComponent<Delete_Button>().current_furniture = this;
+        Utils_.Active_Desactive_5(b_delete_, b_rotate_, b_texture_, b_color_, menu_ac_, true);
+        b_delete_.GetComponent<Delete_Button>().current_f = this;
         b_rotate_.GetComponent<Rotation_button>().current_f = this;
+        b_texture_.GetComponent<Texture_button>().current_f = this;
+        b_color_.GetComponent<Color_Button>().current_f = this;
 
         isPressed = true;
     }
 
     public void Deselect()
     {
-
         isPressed = false;
+    }
+
+    public void ColorButton()
+    {
+        active = !active;
+        Debug.Log("active : " + active);
+    }
+
+    public void TextureButton()
+    {
+        activeTexture = !activeTexture;
+        Debug.Log("activeTexture : " + active);
     }
 
     public void DeleteObject()
     {
-        Utils_.Active_Desactive_4(b_delete_, b_rotate_, b_texture_, menu_ac_, false);
+        Utils_.Active_Desactive_5(b_delete_, b_rotate_, b_texture_, b_color_, menu_ac_, false);
         //Destroy(ObjectSelected.currentObject);
 
         if (ObjectSelected.currentObject.tag == "sol" || ObjectSelected.currentObject.tag == "mur1" || ObjectSelected.currentObject.tag == "mur2" || ObjectSelected.currentObject.tag == "mur3" || ObjectSelected.currentObject.tag == "mur4" || ObjectSelected.currentObject.tag == "mur5" || ObjectSelected.currentObject.tag == "mur6" || ObjectSelected.currentObject.tag == "mur7" || ObjectSelected.currentObject.tag == "mur8")
@@ -102,6 +114,7 @@ public class ActionObject : MonoBehaviour
             Destroy(ObjectSelected.currentObject.transform.gameObject);
         }
         active = false;
+        activeTexture = false;
     }
 
 
@@ -116,7 +129,6 @@ public class ActionObject : MonoBehaviour
             ObjectSelected.currentObject.transform.Rotate(Vector3.up * 45, Space.Self);
         }
     }
-
     public GameObject camFPS;
 
     private void Update()
@@ -168,11 +180,11 @@ public class ActionObject : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(1) && b_delete_ != null && b_rotate_ != null && b_texture_ != null && menu_ac_ != null)
         {
-            Utils_.Active_Desactive_4(b_delete_, b_rotate_, b_texture_, menu_ac_, false);
+            Utils_.Active_Desactive_5(b_delete_, b_rotate_, b_texture_, b_color_, menu_ac_, false);
             active = false;
+            activeTexture = false;
         }
     }
-
 }
 
 

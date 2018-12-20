@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 222569639423775498}
   - component: {fileID: 114625241242870502}
   - component: {fileID: 114524417680886148}
+  - component: {fileID: 114347518029696592}
   m_Layer: 5
   m_Name: Button_color
   m_TagString: Untagged
@@ -29,6 +30,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114347518029696592
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1706797661195434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5452253ca0994b647bc8eddfe7d0bd7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current_f: {fileID: 0}
 --- !u!114 &114524417680886148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -119,6 +132,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 323, y: 110}
+  m_AnchoredPosition: {x: 323, y: 80}
   m_SizeDelta: {x: 92, y: 22}
   m_Pivot: {x: 0.5, y: 0.5}

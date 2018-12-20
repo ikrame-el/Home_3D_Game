@@ -6,12 +6,12 @@ using UnityEngine.EventSystems;
 public class Delete_Button : MonoBehaviour, IPointerClickHandler
 {
 
-    public ActionObject current_furniture;
+    public ActionObject current_f;
 
 
     public void OnPointerClick(PointerEventData eventData)
     {
-            current_furniture.DeleteObject();
+            current_f.DeleteObject();
     }
 
 }

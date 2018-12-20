@@ -6,11 +6,14 @@ using UnityEngine.UI;
 public class ObjectSelected : MonoBehaviour
 {
     public Text textColor;
+    public Text textTexture;
     public GameObject panelMenuColor;
     public GameObject panelColorPalette;
+    public GameObject panelMenuTexture; 
     public static GameObject currentObject;
     public static GameObject currentRoom;
     public Button[] tabButton = new Button[8];
+    public Button[] tabButtonTexture = new Button[8];
     Material[] tabMaterials;
     static int a = 0;
     GameObject temp = null;
@@ -19,14 +22,12 @@ public class ObjectSelected : MonoBehaviour
 
     void Update()
     {
-
-
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
             {
-                if (hit.collider.gameObject.tag != "unselectable" && hit.collider.gameObject.tag != null)
+                if (hit.collider.gameObject.tag != "unselectable" && hit.collider.gameObject.tag != null && hit.collider.gameObject.name != "FPSController")
                 {
                     currentObject = hit.collider.gameObject;
                     tabMaterials = currentObject.GetComponent<MeshRenderer>().materials;
@@ -41,7 +42,7 @@ public class ObjectSelected : MonoBehaviour
                         tabButton[i].GetComponent<Image>().color = Color.white;
                         tabButton[i].interactable = false;
                     }
-
+                    //tabButtonTexture = tabButton;
                     Debug.Log("currentObject.name: " + currentObject.name + " --  currentObject.tag : " + currentObject.tag);
                     temp = currentObject;
                     a++;
@@ -89,21 +90,23 @@ public class ObjectSelected : MonoBehaviour
 
             for (int i = 0; i < objects.Length; i++)
             {
-                if (objects[i].tag == "sol" || objects[i].tag == "mur1" || objects[i].tag == "mur2" || objects[i].tag == "mur3" || objects[i].tag == "mur4" || objects[i].tag == "mur5" || objects[i].tag == "mur6" || objects[i].tag == "mur7" || objects[i].tag == "mur8")
-                {
-                    objects[i].transform.GetComponent<BoxCollider>().enabled = true;
-                }
-                else
-                {
-                    objects[i].transform.GetComponent<MouseDrag>().enabled = true;
-                    if (currentNameLength >= 5)
-                    {
-                        if (currentName.Substring(0, 5) == "porte")
-                        {
-                            objects[i].transform.GetComponent<BoxCollider>().enabled = true;
-                        }
-                    }
-                }
+                objects[i].transform.GetComponent<BoxCollider>().enabled = true;
+                //objects[i].transform.GetComponent<MouseDrag>().enabled = true;
+                //if (objects[i].tag == "sol" || objects[i].tag == "mur1" || objects[i].tag == "mur2" || objects[i].tag == "mur3" || objects[i].tag == "mur4" || objects[i].tag == "mur5" || objects[i].tag == "mur6" || objects[i].tag == "mur7" || objects[i].tag == "mur8")
+                //{
+                //    objects[i].transform.GetComponent<BoxCollider>().enabled = true;
+                //}
+                //else
+                //{
+                //    objects[i].transform.GetComponent<MouseDrag>().enabled = true;
+                //    if (currentNameLength >= 5)
+                //    {
+                //        if (currentName.Substring(0, 5) == "porte")
+                //        {
+                //            objects[i].transform.GetComponent<BoxCollider>().enabled = true;
+                //        }
+                //    }
+                //}
             }
         }
 
@@ -128,6 +131,23 @@ public class ObjectSelected : MonoBehaviour
                 tabButton[i].gameObject.SetActive(false);
             }
             Utils_.Active_Desactive_2(panelMenuColor, textColor.gameObject, false);
+        }
+
+        if (ActionObject.activeTexture)
+        {
+            for (int i = 0; i < tabButton.Length; i++)
+            {
+                tabButtonTexture[i].gameObject.SetActive(true);
+            }
+            Utils_.Active_Desactive_2(panelMenuTexture, textTexture.gameObject, true);
+        }
+        else
+        {
+            for (int i = 0; i < tabButton.Length; i++)
+            {
+                tabButtonTexture[i].gameObject.SetActive(false);
+            }
+            Utils_.Active_Desactive_2(panelMenuTexture, textTexture.gameObject, false);
         }
     }
 }
